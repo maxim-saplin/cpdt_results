@@ -1,8 +1,8 @@
 import dictionaries from './dictionaries';
 import results from './results';
 
-const db_version_url = "https://raw.githubusercontent.com/maxim-saplin/CrossPlatformDiskTest/master/Results_version.json";
-const db_url = "https://raw.githubusercontent.com/maxim-saplin/CrossPlatformDiskTest/master/Results.json";
+const db_version_url = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results_version.json";
+const db_url = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results.json";
 const db_version_sotrage_key = "cpdt_db_version";
 const db_sotrage_key = "cpdt_db";
 

@@ -9,7 +9,7 @@ import db from './data';
 const urlParams = new URLSearchParams(window.location.search);
 const param = urlParams.get("theme");
 
-if (param === "dark") document.body.className="dark";
+if (param !== "white") document.body.className="dark";
 
 l18n.init();
 document.title = l18n.pageTitle;
