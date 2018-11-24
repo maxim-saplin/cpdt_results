@@ -1,0 +1,16 @@
+body.dark {
+    background-color: black;
+    color:#CCCCCC;
+}
+
+body.dark li.selected {
+    color: white;
+}
+
+body.dark span[contentEditable="true"]{
+  text-shadow : 0 0 0 #CCCCCC;
+}
+
+span.leftColumn .greyed {
+    color: rgb(92, 92, 92);
+}

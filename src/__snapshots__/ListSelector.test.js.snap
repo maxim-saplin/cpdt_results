@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListSelector snapshots 1`] = `
+<ul>
+  <li
+    className={null}
+    onClick={[Function]}
+  >
+    [S]equential write
+  </li>
+  <li
+    className={null}
+    onClick={[Function]}
+  >
+    [S]equential read
+  </li>
+  <li
+    className={null}
+    onClick={[Function]}
+  >
+    [R]andom write (4KB)
+  </li>
+  <li
+    className={null}
+    onClick={[Function]}
+  >
+    [R]andom read (4KB)
+  </li>
+  <li
+    className={null}
+    onClick={[Function]}
+  >
+    [M]emory copy
+  </li>
+</ul>
+`;
