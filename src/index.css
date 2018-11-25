@@ -41,7 +41,7 @@ li{
     cursor: pointer;
     display: inline;
     padding: 3px 7px 3px 7px;
-    ine-height: 26px;
+    line-height: 26px;
 }
 
 li:not(:first-child)::before {
