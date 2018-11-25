@@ -13,7 +13,7 @@ const db = {
     init: function (){
         let fetchVersion = () => {
             return new Promise (resolve => {
-                fetch(db_version_url)
+                fetch(db_version_url, {cache: "no-store"})
                 .then(response => {
                     return response.json();
                 })
@@ -27,7 +27,7 @@ const db = {
 
         let fetchDb = () => {
             return new Promise (resolve => {
-                fetch(db_url)
+                fetch(db_url, {cache: "no-store"})
                 .then(response => response.json())
                 .then(result => {
                     storage.setItem(db_sotrage_key, JSON.stringify(result));
