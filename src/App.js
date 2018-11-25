@@ -11,10 +11,12 @@ class App extends Component {
 
     this.platformClick = this.platformClick.bind(this);
     this.testClick = this.testClick.bind(this);
+    this.searchChanged = this.searchChanged.bind(this);
 
     this.state = {
       selectedTest: db.dictionaries.getTests()[0].key,
-      selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key)
+      selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
+      device: ""
     };
   }
 
@@ -26,6 +28,10 @@ class App extends Component {
     this.setState({selectedPlatforms: key});
   }
 
+  searchChanged(val){
+    this.setState({device: val});
+  }
+
   render() {
     return (
       <div>
@@ -35,11 +41,12 @@ class App extends Component {
           items={db.dictionaries.getTests()} />
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
-        <Search/>
+        <Search searchChanged={this.searchChanged}/>
         <br/>
         <TestResults 
           selectedTest={this.state.selectedTest}
           selectedPlatforms={this.state.selectedPlatforms}
+          device={this.state.device}
         />
       </div>
     );

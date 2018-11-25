@@ -1,10 +1,14 @@
 const results = 
 {
-  getResults: function(platfroms, test){
+  getResults: function(platfroms, test, device){
     let result = this.data.results;
     
     if (platfroms && Array.isArray(platfroms)){
       result = result.filter(r => platfroms.includes(r.platform));
+    }
+
+    if (device){
+      result = result.filter(r => r.device.toLowerCase().includes(device.toLowerCase()));
     }
 
     if (test){

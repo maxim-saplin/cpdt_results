@@ -4,7 +4,7 @@ import db from './data';
 
 class TestResults extends Component {
   render() {
-    let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest);
+    let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest, this.props.device);
 
     return (
       items.map(i =>
@@ -13,7 +13,7 @@ class TestResults extends Component {
             {i.device}
             <br />
             <span className="greyed">
-              {i.deviceYear} {i.deviceDetail}
+              {i.deviceYear}, {i.deviceDetail}
             </span>
           </span>
           <span className="rightColumn">

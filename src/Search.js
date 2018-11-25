@@ -10,15 +10,16 @@ class Search extends PureComponent {
   }
 
   textChanged(e){
-    this.setState({text: e.value});
-    e.preventDefault();
+    //e.preventDefault();
+    if (this.props.searchChanged) this.props.searchChanged(e.target.innerText);
+    //this.setState({text: e.value});
   }
 
   render() {
     return (
       <div className="searchBox">
-        <span contentEditable="true" ref={this.textInput} value={this.state.text} onChange={this.textChanged} onFocus={() => {this.setState({blink:true})}} onBlur={() => {this.setState({blink:false})}}></span>
-        <span className={this.state.blink ? "blink" : ""} onClick={() => {this.textInput.current.focus()}}>_</span>
+        <span contentEditable="true" ref={this.textInput} onInput={this.textChanged} onFocus={() => {this.setState({blink:true})}} onBlur={() => {this.setState({blink:false})}}></span>
+        <span className={this.state.blink ? "blink" : ""} onClick={() => {this.textInput.current.focus()}}>{!this.state.blink && "\xA0\xA0"}_</span>
         &lt;/
       </div>
     )
