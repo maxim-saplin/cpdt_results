@@ -59,6 +59,10 @@ const db = {
             promise = new Promise( resolve => {
                 fetchVersion()
                 .then(result => {
+                    if (useTest){
+                      storage.setItem(db_version_sotrage_key,"test");
+                    }
+
                     if (result !== localDbVersion){
                         fetchDb().then(result => resolve(result));                    
                     }
