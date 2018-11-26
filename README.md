@@ -4,7 +4,5 @@ https://github.com/maxim-saplin/CrossPlatformDiskTest
 
 To run locally:
 1. Clone the repo
-2. npm install --dev create-react-app
+2. npm install --save-dev create-react-app
 3. npm start
-
-P.S.: the app might not start in IE/Edge
