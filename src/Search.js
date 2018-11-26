@@ -19,7 +19,7 @@ class Search extends PureComponent {
     return (
       <div className="searchBox">
         <span contentEditable="true" ref={this.textInput} onInput={this.textChanged} onFocus={() => {this.setState({blink:true})}} onBlur={() => {this.setState({blink:false})}}></span>
-        <span className={this.state.blink ? "blink" : ""} onClick={() => {this.textInput.current.focus()}}>{!this.state.blink && this.state.extraSpaces && "\xA0\xA0"}_</span>
+        <span className={this.state.blink ? "blink" : ""} onClick={() => {this.textInput.current.focus()}}>{!this.state.blink && this.state.extraSpaces && "\xA0\xA0\xA0\xA0"}_</span>
         &lt;/
       </div>
     )
