@@ -21,7 +21,7 @@ class TestResults extends Component {
 
     return (
       items.map(i =>
-        <div className="item" title={this.getAllResults(i)}>
+        <div key={i.id} className="item" title={this.getAllResults(i)}>
           <span className="leftColumn">
             {i.device}
             <br />
