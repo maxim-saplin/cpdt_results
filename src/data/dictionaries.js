@@ -1,7 +1,7 @@
 import l18n from '../translations';
 
 let platforms, tests;
-const shortcutRegex = /(?<=\[).+?(?=\])/;
+const shortcutRegex = /[^\[]+(?=\])/;
 
 function addShortcut(obj) {
   let match = obj.name.match(shortcutRegex);
