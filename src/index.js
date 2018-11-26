@@ -7,10 +7,13 @@ import l18n from './translations';
 import db from './data';
 
 const urlParams = new URLSearchParams(window.location.search);
-const param = urlParams.get("theme");
+const themeParam = urlParams.get("theme");
+if (themeParam !== "white") document.body.className="dark";
 
-if (param !== "white") document.body.className="dark";
+const testDbParam = urlParams.get("testdb");
+let testDb = false;
+if (testDbParam === "true") testDb = true; 
 
 l18n.init();
 document.title = l18n.pageTitle;
-db.init().then(() => ReactDOM.render(<App />, document.getElementById('root')));
+db.init(testDb).then(() => ReactDOM.render(<App />, document.getElementById('root')));

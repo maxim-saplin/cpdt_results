@@ -2,7 +2,8 @@ import dictionaries from './dictionaries';
 import results from './results';
 
 const db_version_url = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results_version.json";
-const db_url = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results.json";
+let db_url = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results.json";
+const db_url_test = "https://raw.githubusercontent.com/maxim-saplin/cpdt_results/master/Results_test.json";
 const db_version_sotrage_key = "cpdt_db_version";
 const db_sotrage_key = "cpdt_db";
 
@@ -10,7 +11,7 @@ const db = {
     dictionaries : dictionaries,
     results : results,
     
-    init: function (){
+    init: function (useTest){
         let fetchVersion = () => {
             return new Promise (resolve => {
                 fetch(db_version_url, {cache: "no-store"})
@@ -37,10 +38,16 @@ const db = {
                 })
             });
         };
-        
+
         let promise = null;
 
         let storage = window.localStorage;
+
+        if (useTest){
+          db_url = db_url_test;
+          storage.setItem(db_version_sotrage_key,"test");
+        }
+
         let data = storage.getItem(db_sotrage_key);
         if (data) {
           try { data = JSON.parse(data);} catch{};
