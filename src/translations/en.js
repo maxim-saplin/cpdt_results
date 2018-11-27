@@ -15,6 +15,15 @@ const translations =
     randRead_s: "[R]and. read (4KB)",
     memCopy_s: "[M]em. copy",
 
+    seqWrite_f: "Sequential write",
+    seqRead_f: "Sequential read",
+    randWrite_f: "Random write (4KB)",
+    randRead_f: "Random read (4KB)",
+    memCopy_f: "Memory copy",
+
+    throughput: "Throughput",
+    nothingToShow: "Nothing to show",
+
     Android: "[A]ndroid",
     macOS: "mac[O]S",
     Windows: "[W]indows",

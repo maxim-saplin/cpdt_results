@@ -15,6 +15,15 @@ const translations =
     randRead_s: "[П]роизв. чтение (4КБ)",
     memCopy_s: "[К]оп. памяти",
 
+    seqWrite_f: "Последовательная запись",
+    seqRead_f: "Последовательное чтение",
+    randWrite_f: "Произвольная запись (4КБ)",
+    randRead_f: "Произвольное чтение (4КБ)",
+    memCopy_f: "Копирование памяти",
+
+    throughput: "Пропускная способность",
+    nothingToShow: "Nothing to show",
+
     Android: "[A]ndroid",
     macOS: "mac[O]S",
     Windows: "[W]indows",
