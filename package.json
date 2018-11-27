@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://maxim-saplin.github.io/cpdt_results",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
