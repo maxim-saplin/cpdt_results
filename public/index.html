@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <title>CDPT</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17809502-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-17809502-2');
-    </script>
-  </head>
-  <body style="height: 100%">
-    <noscript>
-      You need to enable JavaScript to run this app.
-      Вам необходимо включить JavaScript для запуска данного приложения.
-    </noscript>
-    <div id="root" style="height: 100%"></div>
-  </body>
+
+<head>
+  <script>
+    window.onerror = function (message, url, lineNo, colNo, error) {
+
+      console.log(arguments);
+
+      let container = document.createElement('div');
+
+      container.style.color = 'red';
+      container.style.position = 'fixed';
+      container.style.background = '#eee';
+      container.style.padding = '2em';
+      container.style.top = '1em';
+      container.style.left = '1em';
+
+      let msg = document.createElement('pre');
+      msg.innerText = [
+        'Message: ' + message,
+        'URL: ' + url,
+        'Line: ' + lineNo,
+        'Column: ' + colNo,
+        'Stack: ' + (error && error.stack)
+      ].join('\n');
+
+      container.appendChild(msg);
+
+      document.body.appendChild(container);
+    };
+  </script>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <title>CDPT</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17809502-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-17809502-2');
+  </script>
+</head>
+
+<body style="height: 100%">
+  <noscript>
+    You need to enable JavaScript to run this app.
+    Вам необходимо включить JavaScript для запуска данного приложения.
+  </noscript>
+  <div id="root" style="height: 100%"></div>
+</body>
+
 </html>

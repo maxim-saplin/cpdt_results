@@ -29,7 +29,6 @@ db.init(testDb).then(() => {
   }
 });
 
-
 function runBenchmark(){
   let t1 = performance.now();
   const repeats = 5;
