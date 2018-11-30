@@ -12,23 +12,27 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
   },
   {
+    "revision": "036d007395279645d7dd332ac08e6c66",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
+  },
+  {
     "revision": "95b7c02d66ede0201f4c",
     "url": "/cpdt_results/static/js/runtime~main.95b7c02d.js"
   },
   {
-    "revision": "f6f106553606bb01ff61",
-    "url": "/cpdt_results/static/js/main.f6f10655.chunk.js"
+    "revision": "5eb7638b4a3cfbaa0857",
+    "url": "/cpdt_results/static/js/main.5eb7638b.chunk.js"
   },
   {
-    "revision": "4c3170c61556e6ec5658",
-    "url": "/cpdt_results/static/js/1.4c3170c6.chunk.js"
+    "revision": "4775d7fd23afb0dbd24e",
+    "url": "/cpdt_results/static/js/1.4775d7fd.chunk.js"
   },
   {
-    "revision": "f6f106553606bb01ff61",
-    "url": "/cpdt_results/static/css/main.0c7d1d67.chunk.css"
+    "revision": "5eb7638b4a3cfbaa0857",
+    "url": "/cpdt_results/static/css/main.1fb0861f.chunk.css"
   },
   {
-    "revision": "0b80502911f904b1b4527ad15e12c554",
+    "revision": "70c307bd214d64d0c0d4e6b0fa9e20af",
     "url": "/cpdt_results/index.html"
   }
 ];
