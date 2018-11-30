@@ -12,10 +12,13 @@ class App extends Component {
     this.platformClick = this.platformClick.bind(this);
     this.testClick = this.testClick.bind(this);
     this.searchChanged = this.searchChanged.bind(this);
+    this.searchEnterPressed = this.searchEnterPressed.bind(this);
+    this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
 
     this.state = {
       selectedTest: db.dictionaries.getTests()[0].key,
       selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
+      selectedResultIds: [],
       device: ""
     };
   }
@@ -32,6 +35,18 @@ class App extends Component {
     this.setState({device: val});
   }
 
+  searchEnterPressed(resultId){
+    let selectedResultIds = this.state.selectedResultIds;
+    selectedResultIds.push(resultId);
+    this.setState({selectedResultIds : selectedResultIds, device: ""});
+  }
+
+  selectedIdRemoved(id){
+    let selectedResultIds = this.state.selectedResultIds;
+    selectedResultIds = selectedResultIds.filter(i => i !== id);
+    this.setState({selectedResultIds : selectedResultIds });
+  }
+
   render() {
     return (
       <div>
@@ -41,11 +56,13 @@ class App extends Component {
           items={db.dictionaries.getTests()} />
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
-        <Search searchChanged={this.searchChanged}/>
+        <Search searchChanged={this.searchChanged} enterPressed={this.searchEnterPressed}/>
         <br/>
         <TestResults 
           selectedTest={this.state.selectedTest}
           selectedPlatforms={this.state.selectedPlatforms}
+          selectedResultIds={this.state.selectedResultIds}
+          selectedIdRemoved={this.selectedIdRemoved}
           device={this.state.device}
         />
       </div>

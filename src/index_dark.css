@@ -3,6 +3,10 @@ body.dark {
     color:#CCCCCC;
 }
 
+body.dark button{
+  color:#CCCCCC;
+}
+
 body.dark li.selected {
     color: white;
 }
@@ -11,6 +15,6 @@ body.dark span[contentEditable="true"]{
   text-shadow : 0 0 0 #CCCCCC;
 }
 
-span.leftColumn .greyed {
-    color: rgb(92, 92, 92);
+body.dark div.item.selected{
+  background-color: #141414;
 }

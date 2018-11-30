@@ -7,7 +7,7 @@ class ListSelector extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.selectAll = this.selectAll.bind(this);
-    this.keyPress = this.keyPress.bind(this);
+    this.onKeyPress = this.onKeyPress.bind(this);
   }
 
   toggle(key) {
@@ -29,7 +29,7 @@ class ListSelector extends Component {
     return this.props.items.map(p => p.key);
   }
 
-  keyPress(e) {
+  onKeyPress(e) {
     if (document.activeElement instanceof HTMLBodyElement){
       if (this.shortcuts.has(e.key))
       {
@@ -58,7 +58,7 @@ class ListSelector extends Component {
 
   componentWillUnmount(){
     if (this.keyPressSubscribed)
-      document.removeEventListener('keypress', this.keyPress);
+      document.removeEventListener('keypress', this.onKeyPress);
   }
 
   initShortcuts() {
@@ -80,11 +80,11 @@ class ListSelector extends Component {
       }
     }
     if (this.shortcuts.size > 0) {
-      document.addEventListener('keypress', this.keyPress);
+      document.addEventListener('keypress', this.onKeyPress);
       this.keyPressSubscribed = true;
     }
     else if (this.keyPressSubscribed) {
-      document.removeEventListener('keypress', this.keyPress);
+      document.removeEventListener('keypress', this.onKeyPress);
       this.keyPressSubscribed = false;
     }
   }
