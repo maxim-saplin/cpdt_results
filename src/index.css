@@ -63,6 +63,8 @@ button{
   border: none;
   cursor: pointer;
   height: 24px;
+  width: 20%;
+  font-size: 14px;
 }
 
 span.searchBox{
@@ -78,8 +80,12 @@ span.searchBoxHint{
   box-sizing: border-box;
   text-align: left;
   padding-left: 6px;
+  top: 4px;
+  position: relative;
   display: inline-block;
   font-family: IBMPlexMono-Italic;
+  overflow-x: scroll;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 0.5s linear;
 }
@@ -149,6 +155,11 @@ span.rightColumn span{
   text-shadow: 2px 2px #5757ff;
   padding: 4px;
   box-sizing: border-box;
+}
+
+.selected span.rightColumn span {
+  background-color: #585858;
+  text-shadow: 2px 2px #585858;
 }
 
 .blink {

@@ -19,6 +19,7 @@ class Search extends PureComponent {
   textChanged(e){
     if (this.enterPressed) {
       e.target.innerText = ""; 
+      this.enterPressed = false;
     }
     
     if (this.props.searchChanged) {
@@ -59,7 +60,7 @@ class Search extends PureComponent {
           &lt;/
         </span>
         <span className={!this.state.extraSpaces && this.state.blink ? "searchBoxHint visible" : "searchBoxHint"}>
-          - hit "Enter" to fix the topmost result
+          "Enter" & fix top result
         </span>
       </>
     )
