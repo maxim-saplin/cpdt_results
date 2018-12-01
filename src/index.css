@@ -67,6 +67,7 @@ button{
   font-size: 14px;
   float: right;
   margin-right: 6px;
+  text-align: right;
 }
 
 span.searchBox{
