@@ -21,12 +21,6 @@ const results =
         (a,b) => 
           b[test] - a[test]
         );
-      if (result.length > 0){
-        let maxVal = result[0][test];
-        for (var i = 0; i < result.length; i++){
-          result[i].percent = result[i][test]/maxVal;
-        }
-      }
     }
 
     if (result.length > 0) this.lastResultId = result[0].id; else this.lastResultId = null;
@@ -38,6 +32,16 @@ const results =
     if (id < 0 || id > this.data.results.length) return null;
 
     return this.data.results[id-1];
+  },
+
+  setPercents: function(results, test) {
+    let maxVal = 0;
+    for (var i = 0; i < results.length; i++){
+      if (results[i][test] > maxVal) maxVal = results[i][test];
+    }
+    for (var i = 0; i < results.length; i++){
+      results[i].percent = results[i][test]/maxVal;
+    }
   },
 
   getLastResultId: function(){

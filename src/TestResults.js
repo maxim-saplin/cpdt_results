@@ -54,6 +54,7 @@ class TestResults extends Component {
     }
 
     if (items && items.length > 0) {
+      db.results.setPercents(items, this.props.selectedTest);
       return (
         items.map(i =>
           <div key={i.id} className={selectedCount-- > 0 ? "item selected" : "item"} title={this.getAllResults(i)}>
