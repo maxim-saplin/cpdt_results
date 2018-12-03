@@ -29,7 +29,9 @@ const translations =
     Windows: "[W]indows",
     all: "Все",
     mbps: "МБ/с",
-    gbps: "ГБ/с"
+    gbps: "ГБ/с",
+
+    hitEnter: "Нажать Enter для закрепления записи"
 }
 
 export default translations;

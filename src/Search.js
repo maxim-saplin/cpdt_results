@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import db from './data';
+import l18n from './translations';
 
 class Search extends PureComponent {
   constructor(props) {
@@ -60,7 +61,7 @@ class Search extends PureComponent {
           &lt;/
         </span>
         <span className={!this.state.extraSpaces && this.state.blink ? "searchBoxHint visible" : "searchBoxHint"}>
-          "Enter" & fix top result
+          {l18n.hitEnter}
         </span>
       </>
     )

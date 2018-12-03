@@ -15,12 +15,51 @@ class App extends Component {
     this.searchEnterPressed = this.searchEnterPressed.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
 
+    this.urlParams = new URLSearchParams(window.location.hash ? window.location.hash.replace("#","") : "");
+    this.selectedIdsParam = "selected";
+
     this.state = {
       selectedTest: db.dictionaries.getTests()[0].key,
       selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
-      selectedResultIds: [],
+      selectedResultIds: this.getSelectedIdsFromParam(),
       device: ""
     };
+  }
+
+  getSelectedIdsFromParam(){
+    let param = this.urlParams.get(this.selectedIdsParam);
+    let ids = [];
+
+    if (param) {
+      let split = param.split(",");
+      
+      for (let i = 0; i < split.length; i++){
+        let id = parseInt(split[i]);
+        if (Number.isInteger(id)){
+          ids.push(id);
+        }
+      }
+    }
+
+    return ids;
+  }
+
+  addSelectedIdsToParam(ids){
+    if (ids.length > 0){ 
+      let param = "";
+
+      for (let i = 0; i < ids.length; i++) {
+        param += ids[i];
+        if (i != ids.length-1) param+=",";
+      }
+
+      this.urlParams.set(this.selectedIdsParam, param);
+    }
+    else {
+      this.urlParams.delete(this.selectedIdsParam);
+    }
+
+    window.location.hash = this.urlParams.toString();
   }
 
   testClick(key){
@@ -39,12 +78,14 @@ class App extends Component {
     let selectedResultIds = this.state.selectedResultIds;
     selectedResultIds.push(resultId);
     this.setState({selectedResultIds : selectedResultIds, device: ""});
+    this.addSelectedIdsToParam(selectedResultIds);
   }
 
   selectedIdRemoved(id){
     let selectedResultIds = this.state.selectedResultIds;
     selectedResultIds = selectedResultIds.filter(i => i !== id);
     this.setState({selectedResultIds : selectedResultIds });
+    this.addSelectedIdsToParam(selectedResultIds);
   }
 
   render() {

@@ -36,10 +36,10 @@ const results =
 
   setPercents: function(results, test) {
     let maxVal = 0;
-    for (var i = 0; i < results.length; i++){
+    for (let i = 0; i < results.length; i++){
       if (results[i][test] > maxVal) maxVal = results[i][test];
     }
-    for (var i = 0; i < results.length; i++){
+    for (let i = 0; i < results.length; i++){
       results[i].percent = results[i][test]/maxVal;
     }
   },

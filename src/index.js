@@ -9,27 +9,33 @@ import App from './App';
 import l18n from './translations';
 import db from './data';
 
-const urlParams = new URLSearchParams(window.location.search);
-const themeParam = urlParams.get("theme");
-if (themeParam !== "white") document.body.className="dark";
-
 let benchmark = false;
 let testDb = false;
+let themeParam = null;
 
-const benchmarkParam = urlParams.get("benchmark");
-const testDbParam = urlParams.get("testdb");
-if (benchmarkParam === "true") { benchmark = true; testDb = true; }
-else if (testDbParam === "true") testDb = true; 
+initParams(); 
+start();
 
-l18n.init();
-document.title = l18n.pageTitle;
-db.init(testDb).then(() => {
-  ReactDOM.render(<App />, document.getElementById('root'));
-  if (benchmark){
-    document.title = "Running benchmark...";
-    runBenchmark();
-  }
-});
+function start(){
+  l18n.init();
+  document.title = l18n.pageTitle;
+  if (themeParam !== "white") document.body.className="dark";
+
+  db.init(testDb).then(() => {
+    ReactDOM.render(<App />, document.getElementById('root'));
+    if (benchmark){
+      document.title = "Running benchmark...";
+      runBenchmark();
+    }
+  });
+}
+
+function initParams(){
+  const urlParams = new URLSearchParams(window.location.search);
+  themeParam = urlParams.get("theme");
+  if (urlParams.get("benchmark") === "true") { benchmark = true; testDb = true; }
+  else if (urlParams.get("testdb") === "true") testDb = true
+}
 
 function runBenchmark(){
   let t1 = performance.now();

@@ -29,7 +29,9 @@ const translations =
     Windows: "[W]indows",
     all: "All",
     mbps: "MB/s",
-    gbps: "GB/s"
+    gbps: "GB/s",
+
+    hitEnter: "Hit Enter & fix top result"
 }
 
 export default translations;
