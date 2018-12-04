@@ -123,6 +123,8 @@ div.item{
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 div.item.selected{

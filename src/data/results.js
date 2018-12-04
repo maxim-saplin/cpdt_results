@@ -34,6 +34,10 @@ const results =
     return this.data.results[id-1];
   },
 
+  idExists: function(id){
+    return this.getResultById(id) != null;
+  },
+
   setPercents: function(results, test) {
     let maxVal = 0;
     for (let i = 0; i < results.length; i++){

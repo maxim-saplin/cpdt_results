@@ -35,7 +35,7 @@ class App extends Component {
       
       for (let i = 0; i < split.length; i++){
         let id = parseInt(split[i]);
-        if (Number.isInteger(id)){
+        if (Number.isInteger(id) && db.results.idExists(id)){
           ids.push(id);
         }
       }
