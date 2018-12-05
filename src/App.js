@@ -12,7 +12,7 @@ class App extends Component {
     this.platformClick = this.platformClick.bind(this);
     this.testClick = this.testClick.bind(this);
     this.searchChanged = this.searchChanged.bind(this);
-    this.searchEnterPressed = this.searchEnterPressed.bind(this);
+    this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
 
     this.urlParams = new URLSearchParams(window.location.hash ? window.location.hash.replace("#","") : "");
@@ -35,7 +35,7 @@ class App extends Component {
       
       for (let i = 0; i < split.length; i++){
         let id = parseInt(split[i]);
-        if (Number.isInteger(id) && db.results.idExists(id)){
+        if (Number.isInteger(id) && db.results.idExists(id) && !ids.includes(id)){
           ids.push(id);
         }
       }
@@ -50,7 +50,7 @@ class App extends Component {
 
       for (let i = 0; i < ids.length; i++) {
         param += ids[i];
-        if (i != ids.length-1) param+=",";
+        if (i !== ids.length-1) param+=",";
       }
 
       this.urlParams.set(this.selectedIdsParam, param);
@@ -74,7 +74,7 @@ class App extends Component {
     this.setState({device: val});
   }
 
-  searchEnterPressed(resultId){
+  resultSelected(resultId){
     let selectedResultIds = this.state.selectedResultIds;
     selectedResultIds.push(resultId);
     this.setState({selectedResultIds : selectedResultIds, device: ""});
@@ -97,13 +97,14 @@ class App extends Component {
           items={db.dictionaries.getTests()} />
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
-        <Search searchChanged={this.searchChanged} enterPressed={this.searchEnterPressed}/>
+        <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected}/>
         <br/>
         <TestResults 
           selectedTest={this.state.selectedTest}
           selectedPlatforms={this.state.selectedPlatforms}
           selectedResultIds={this.state.selectedResultIds}
           selectedIdRemoved={this.selectedIdRemoved}
+          resultSelected={this.resultSelected}
           device={this.state.device}
         />
       </div>

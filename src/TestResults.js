@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import TestResultDetails from './TestResultDetails';
+import TestResult from './TestResult';
+import Hint from './Hint';
 import l18n from './translations';
 import db from './data';
 
@@ -7,6 +10,7 @@ class TestResults extends Component {
     super(props);
 
     this.onKeyUp = this.onKeyUp.bind(this);
+    this.state = {expandedId: null, doubleTapHint: false};
   }
 
   getAllResults(result) {
@@ -33,46 +37,72 @@ class TestResults extends Component {
     }
   }
 
+  keyboardEventsSubscription() {
+    if (!this.deletableId && this.keyPressSubscribed) {
+      document.removeEventListener('keyup', this.onKeyUp);
+      this.keyPressSubscribed = false;
+    }
+    else if (this.deletableId && !this.keyPressSubscribed) {
+      document.addEventListener('keyup', this.onKeyUp);
+      this.keyPressSubscribed = true;
+    }
+  }
+
   render() {
     let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest, this.props.device, this.props.selectedResultIds);
     let selectedCount = -1;
     this.deletableId = null;
 
-    if (this.props.selectedResultIds && this.props.selectedResultIds.length > 0){
-      let selectedResults = this.props.selectedResultIds.map(id => db.results.getResultById(id));
+    let selectedResultIds = this.props.selectedResultIds;
+    let expandedId = this.state.expandedId;
+
+    if (selectedResultIds && selectedResultIds.length > 0){
+      let selectedResults = selectedResultIds.map(id => db.results.getResultById(id));
       items = selectedResults.concat(items);
       selectedCount = selectedResults.length;
       this.deletableId = selectedResults[selectedCount-1].id;
     }
     
-    if (!this.deletableId && this.keyPressSubscribed){
-      document.removeEventListener('keyup', this.onKeyUp);
-      this.keyPressSubscribed = false;
-    } else if (this.deletableId && !this.keyPressSubscribed) {
-      document.addEventListener('keyup', this.onKeyUp);
-      this.keyPressSubscribed = true;
-    }
+    this.keyboardEventsSubscription();
 
     if (items && items.length > 0) {
       db.results.setPercents(items, this.props.selectedTest);
       return (
-        items.map(i =>
-          <div key={i.id} className={selectedCount-- > 0 ? "item selected" : "item"} title={this.getAllResults(i)}>
-            <span className="leftColumn">
-              {i.device}
-              <br />
-              <span className="greyed">
-                {i.deviceYear}, {i.deviceDetail}
-              </span>
-            </span>
-            <span className="rightColumn">
-              <span style={{ width: i.percent * 80 + "%" }}>
-                {i[this.props.selectedTest]} {this.props.selectedTest === "memCopy" ? l18n.gbps : l18n.mbps}
-              </span>
-              {selectedCount === 0 && <button onClick={() => this.props.selectedIdRemoved(i.id)}>[Esc]</button>}
-            </span>
-          </div>)
-      )
+        <>
+        {this.state.doubleTapHint && <Hint>{l18n.hintDoubleTap}</Hint>}
+        {items.map(i =>
+          <div 
+            key={i.id} 
+            className={selectedCount-- > 0 ? "item selected" : "item"} 
+            title={this.getAllResults(i)}
+            onClick={
+              (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+              () => {
+                this.setState({expandedId: expandedId === i.id ? null : i.id});
+                if (!this.state.doubleTapHint) this.setState({doubleTapHint:true});
+              }
+              : null
+            }
+            onDoubleClick={
+              (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+              (e) => {
+                window.getSelection().empty(); 
+                this.props.resultSelected(i.id); 
+                if (expandedId === i.id) this.setState({expandedId: null});
+              }
+              : null
+            }
+          >
+            <TestResult
+              item={i}
+              selectedTest={this.props.selectedTest }
+              selectedIdRemoved={this.props.selectedIdRemoved}
+              closableX={selectedCount > 0}
+              closableEsc={selectedCount === 0}
+            />
+            {((selectedCount >= 0) || (expandedId === i.id)) && <TestResultDetails item={i} noHighlight={expandedId === i.id}/> }
+          </div>)}
+      </>)
     }
     else return <div className="nothing">{l18n.nothingToShow}</div>
   }

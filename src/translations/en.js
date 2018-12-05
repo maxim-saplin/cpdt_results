@@ -1,7 +1,7 @@
 const translations = 
 {
-    pageTitle: "CPDT: Results Database",
-    title: "CPDT SSD/HDD Benchmark",
+    pageTitle: "CPDT: Storage Performance Database",
+    title: "SSD/HDD Benchmark",
     subTitle: "Performance Chart",
     seqWrite: "[S]equential write",
     seqRead: "[S]equential read",
@@ -31,7 +31,12 @@ const translations =
     mbps: "MB/s",
     gbps: "GB/s",
 
-    hitEnter: "Hit Enter & fix top result"
+    hitEnter: "Hit Enter & fix top result",
+    hintDoubleTap: "Double tap to fix record at the top",
+
+    result_SRW: "Sq.R÷W",
+    result_RRW: "Rn.R÷W",
+    result_MEM: "Mem.cpy",
 }
 
 export default translations;

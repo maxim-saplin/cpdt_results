@@ -63,10 +63,13 @@ button{
   border: none;
   cursor: pointer;
   height: 24px;
-  width: 20%;
+  font-family: IBMPlexMono-Regular;
   font-size: 14px;
+  width: 17%;
+  overflow-x: hidden;
   float: right;
-  margin-right: 6px;
+  margin-right: 3px;
+  padding: 0;
   text-align: right;
 }
 
@@ -143,7 +146,7 @@ span.leftColumn {
 
 span.leftColumn .greyed {
   text-align: right;
-  color: darkgray;
+  color: #606060;
 }
 
 span.rightColumn {
@@ -167,13 +170,51 @@ span.rightColumn span{
   text-shadow: 2px 2px #585858;
 }
 
+span.centerColumn {
+  width: 100%;
+  background-color: #F0F0F0;
+  padding-bottom: 3px;
+  font-family: IBMPlexMono-Italic;
+  color: #606060;
+}
+
+span.centerColumn.noHighlight {
+  background-color: transparent !important;
+}
+
+span.centerColumn .ttl{
+  color: darkgray;
+  font-size: 14px;
+}
+
+span.centerColumn .res{
+  font-size: 14px;
+}
+
+span.centerColumn .unit{
+  font-size: 12px;
+}
+
+span.hint{
+  position: fixed;
+  bottom: 10px;
+  background-color: #606060;
+  padding: 10px 15px 10px 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fade-in-out 4.5s 0.5s forwards ease;
+}
+
+@keyframes fade-in-out {
+  25% { opacity: 1; background-color: #F0F0F0;}
+  85% { opacity: 1; background-color: #F0F0F0;}
+  100% { opacity: 0; }
+}
+
 .blink {
   animation: blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: blink-animation 1s steps(2, start) infinite;
 }
 @keyframes blink-animation {
-  to { visibility: hidden; }
-}
-@-webkit-keyframes blink-animation {
   to { visibility: hidden; }
 }

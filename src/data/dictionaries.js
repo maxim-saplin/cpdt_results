@@ -35,4 +35,10 @@ const dictionaries =
   }
 }
 
+dictionaries.seqWrite = "seqWrite";
+dictionaries.seqRead = "seqRead";
+dictionaries.randWrite = "randWrite";
+dictionaries.randRead = "randRead";
+dictionaries.memCopy = "memCopy";
+
 export default dictionaries;

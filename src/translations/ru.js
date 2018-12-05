@@ -1,7 +1,7 @@
 const translations = 
 {
-    pageTitle:  "CPDT: База результатов",
-    title: "CPDT. Тестирование SSD/HDD",
+    pageTitle:  "CPDT: База производительности памяти",
+    title: "Тестирование SSD/HDD",
     subTitle: "Скорости устройств",
     seqWrite: "[П]оследовательная запись",
     seqRead: "[П]оследовательное чтение",
@@ -31,7 +31,12 @@ const translations =
     mbps: "МБ/с",
     gbps: "ГБ/с",
 
-    hitEnter: "Нажать Enter для закрепления записи"
+    hitEnter: "Нажать Enter для закрепления записи",
+    hintDoubleTap: "Нажать два раза для закрепления записи",
+
+    result_SRW: "Пс.Ч÷З",
+    result_RRW: "Пр.Ч÷З",
+    result_MEM: "Коп.пам",
 }
 
 export default translations;
