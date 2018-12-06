@@ -74,6 +74,7 @@ class TestResults extends Component {
           <div 
             key={i.id} 
             className={selectedCount-- > 0 ? "item selected" : "item"} 
+            id={selectedCount === 0 ? "last" : null}
             title={this.getAllResults(i)}
             onClick={
               (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?

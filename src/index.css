@@ -134,6 +134,14 @@ div.item.selected{
   background-color: #E4E4E4;
 }
 
+div#last.item.selected{
+  animation: item-blink 0.7s 0.2s ease;
+}
+
+@keyframes item-blink {
+  50% {opacity: 0.7}
+}
+
 span.leftColumn, span.rightColumn {
   padding: 3px 6px 3px 6px;
   box-sizing: border-box;
