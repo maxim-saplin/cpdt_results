@@ -15,7 +15,8 @@ class App extends Component {
     this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
 
-    this.urlParams = new URLSearchParams(window.location.hash ? window.location.hash.replace("#","") : "");
+    //this.urlParams = new URLSearchParams(window.location.hash ? window.location.hash.replace("#","") : "");
+    this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
     this.selectedIdsParam = "selected";
 
     this.state = {
@@ -58,8 +59,8 @@ class App extends Component {
     else {
       this.urlParams.delete(this.selectedIdsParam);
     }
-
-    window.location.hash = this.urlParams.toString();
+    window.history.replaceState({},null,"?"+this.urlParams.toString());
+    //window.location.hash = this.urlParams.toString();
   }
 
   testClick(key){
@@ -74,18 +75,24 @@ class App extends Component {
     this.setState({device: val});
   }
 
-  resultSelected(resultId){
+  resultSelected(resultId, clearDevice){
     let selectedResultIds = this.state.selectedResultIds;
     selectedResultIds.push(resultId);
-    this.setState({selectedResultIds : selectedResultIds, device: ""});
+    if (clearDevice) {
+      this.setState({device: ""});
+    }
+    this.setSelectedIds(selectedResultIds);
+  }
+
+  setSelectedIds(selectedResultIds) {
+    this.setState({ selectedResultIds: selectedResultIds });
     this.addSelectedIdsToParam(selectedResultIds);
   }
 
   selectedIdRemoved(id){
     let selectedResultIds = this.state.selectedResultIds;
     selectedResultIds = selectedResultIds.filter(i => i !== id);
-    this.setState({selectedResultIds : selectedResultIds });
-    this.addSelectedIdsToParam(selectedResultIds);
+    this.setSelectedIds(selectedResultIds);
   }
 
   render() {

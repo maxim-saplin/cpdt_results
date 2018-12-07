@@ -24,7 +24,7 @@ class Search extends PureComponent {
     }
     
     if (this.props.searchChanged) {
-      this.props.searchChanged(e.target.innerText);
+      this.props.searchChanged(e.target.innerText, true);
     }
     if (e.target.innerText && this.state.extraSpaces) this.setState({extraSpaces: false});
     else if (!e.target.innerText && !this.state.extraSpaces) this.setState({extraSpaces: true});

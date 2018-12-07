@@ -52,6 +52,7 @@ class TestResults extends Component {
     let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest, this.props.device, this.props.selectedResultIds);
     let selectedCount = -1;
     this.deletableId = null;
+    let title = "";
 
     let selectedResultIds = this.props.selectedResultIds;
     let expandedId = this.state.expandedId;
@@ -61,7 +62,14 @@ class TestResults extends Component {
       items = selectedResults.concat(items);
       selectedCount = selectedResults.length;
       this.deletableId = selectedResults[selectedCount-1].id;
+
+      for (let i = 0; (i < 2) && (i < selectedResults.length); i++){
+        title += selectedResults[i].device;
+        if (i == 1 || i == selectedResults.length-1) title +=" - "; else title +=", ";
+      }
     }
+
+    document.title = title + l18n.pageTitle;
     
     this.keyboardEventsSubscription();
 
