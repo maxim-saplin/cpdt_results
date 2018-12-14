@@ -1,28 +1,36 @@
 @font-face {
     font-family: 'IBMPlexMono-Regular';
     font-display: fallback;
-    src: local('IBMPlexMono-Regular'), url(./fonts/IBMPlexMono-Regular.woff2) format('woff');
+    src: local('IBMPlexMono-Regular'), url(./fonts/IBMPlexMono-Regular.woff2) format('woff2')
+    , url(./fonts/IBMPlexMono-Regular.woff) format('woff');
 }
 @font-face {
     font-family: 'IBMPlexMono-Medium';
     font-display: fallback;
-    src: local('IBMPlexMono-Medium'), url(./fonts/IBMPlexMono-Medium.woff2) format('woff');
+    src: local('IBMPlexMono-Medium'), url(./fonts/IBMPlexMono-Medium.woff2) format('woff2')
+    , url(./fonts/IBMPlexMono-Medium.woff) format('woff');
 }
 @font-face {
     font-family: 'IBMPlexMono-SemiBold';
     font-display: fallback;
-    src: local('IBMPlexMono-SemiBold'), url(./fonts/IBMPlexMono-SemiBold.woff2) format('woff');
+    src: local('IBMPlexMono-SemiBold'), url(./fonts/IBMPlexMono-SemiBold.woff2) format('woff2')
+    , url(./fonts/IBMPlexMono-SemiBold.woff) format('woff');
 }
 @font-face {
   font-family: 'IBMPlexMono-Italic';
   font-display: fallback;
-  src: local('IBMPlexMono-Italic'), url(./fonts/IBMPlexMono-Italic.woff2) format('woff');
+  src: local('IBMPlexMono-Italic'), url(./fonts/IBMPlexMono-Italic.woff2) format('woff2')
+  , url(./fonts/IBMPlexMono-Italic.woff) format('woff');
 }
 
 body {
     font-family: IBMPlexMono-Regular;
     font-size: 14px;
     text-align: center;
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 h1, h2{

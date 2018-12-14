@@ -96,7 +96,8 @@ class TestResults extends Component {
             onDoubleClick={
               (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
               (e) => {
-                window.getSelection().empty(); 
+                let selection = window.getSelection();
+                if (selection.empty) selection.empty(); 
                 this.props.resultSelected(i.id); 
                 if (expandedId === i.id) this.setState({expandedId: null});
               }
