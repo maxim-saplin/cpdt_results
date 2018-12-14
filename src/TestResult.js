@@ -8,14 +8,16 @@ class TestResult extends PureComponent {
     if (i) return (
       <>
         <span className="leftColumn">
-          {i.device}
+          <em itemProp="name">
+            {i.device}
+          </em>
           <br />
-          <span className="greyed">
+          <span className="greyed" itemProp="description">
             {i.deviceYear}, {i.deviceDetail}
           </span>
         </span>
         <span className="rightColumn">
-          <span style={{ width: i.percent * 80 + "%" }}>
+          <span style={{ width: i.percent * 80 + "%" }} itemProp="throughput" > 
             {i[this.props.selectedTest]} {this.props.selectedTest === "memCopy" ? l18n.gbps : l18n.mbps}
           </span>
           {this.props.closableX && <button onClick={() => this.props.selectedIdRemoved(i.id)}>X</button>}

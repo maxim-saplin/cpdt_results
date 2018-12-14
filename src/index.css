@@ -134,6 +134,10 @@ div.item{
   flex-wrap: wrap;
 }
 
+div.item em {
+  font-style: normal;
+}
+
 div.item.selected{
   background-color: #E4E4E4;
 }

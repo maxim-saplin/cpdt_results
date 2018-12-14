@@ -80,6 +80,7 @@ class TestResults extends Component {
         {this.state.doubleTapHint && <Hint>{l18n.hintDoubleTap}</Hint>}
         {items.map(i =>
           <div 
+            itemScope
             key={i.id} 
             className={selectedCount-- > 0 ? "item selected" : "item"} 
             id={selectedCount === 0 ? "last" : null}
