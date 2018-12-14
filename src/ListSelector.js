@@ -103,7 +103,7 @@ class ListSelector extends Component {
 
     if (this.props.items)
       return (
-        <ul>
+        <ul className={this.props.className}>
           {
             Array.isArray(this.props.selectedKey) ?
               this.props.items.map( // multiselect

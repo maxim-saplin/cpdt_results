@@ -33,6 +33,7 @@ const translations =
 
     hitEnter: "Hit Enter & fix top result",
     hintDoubleTap: "Double tap to fix record at the top",
+    close: "[C]lose",
 
     result_SRW: "Sq.R÷W",
     result_RRW: "Rn.R÷W",

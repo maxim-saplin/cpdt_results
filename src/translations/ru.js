@@ -33,6 +33,7 @@ const translations =
 
     hitEnter: "Нажать Enter для закрепления записи",
     hintDoubleTap: "Нажать два раза для закрепления записи",
+    close: "[C] Закрыть",
 
     result_SRW: "Пс.Ч÷З",
     result_RRW: "Пр.Ч÷З",

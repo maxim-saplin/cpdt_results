@@ -15,7 +15,6 @@ class App extends Component {
     this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
 
-    //this.urlParams = new URLSearchParams(window.location.hash ? window.location.hash.replace("#","") : "");
     this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
     this.selectedIdsParam = "selected";
 
@@ -23,6 +22,7 @@ class App extends Component {
       selectedTest: db.dictionaries.getTests()[0].key,
       selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
       selectedResultIds: this.getSelectedIdsFromParam(),
+      inApp: this.urlParams.get("inapp") !== null,
       device: ""
     };
   }
@@ -98,8 +98,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>{l18n.title}: </h1>
-        <h2>{l18n.subTitle}</h2>
+        {!this.state.inApp && <h1>{l18n.title}: </h1>}
+        {!this.state.inApp && <h2>{l18n.subTitle}</h2>}
+        {this.state.inApp && <ListSelector className="close" itemClick={() => window.location.search += "&close"} 
+          items={[{name:l18n.close, shortcut:"c", key:""}]} />}
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
           items={db.dictionaries.getTests()} />
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
