@@ -65,7 +65,7 @@ class TestResults extends Component {
 
       for (let i = 0; (i < 2) && (i < selectedResults.length); i++){
         title += selectedResults[i].device;
-        if (i == 1 || i == selectedResults.length-1) title +=" - "; else title +=", ";
+        if (i === 1 || i === selectedResults.length-1) title +=" - "; else title +=", ";
       }
     }
 
