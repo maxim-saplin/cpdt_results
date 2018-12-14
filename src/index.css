@@ -162,6 +162,10 @@ span.leftColumn, span.rightColumn {
   padding: 3px 6px 3px 6px;
   box-sizing: border-box;
   width: 50%;
+
+}
+
+span.leftColumn span, span.leftColumn em, span.rightColumn span{
   cursor: pointer;
 }
 
