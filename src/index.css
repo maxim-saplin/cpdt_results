@@ -30,7 +30,7 @@ body {
 }
 
 html {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
 }
 
 h1, h2{
@@ -47,15 +47,6 @@ h1{
 
 h2{
   font-family: IBMPlexMono-Regular;
-}
-
-ul.close {
-  text-align: right;
-  margin-top: 0;
-}
-
-ul.close li {
-  padding: 0;
 }
 
 ul {
@@ -171,11 +162,6 @@ span.leftColumn, span.rightColumn {
   padding: 3px 6px 3px 6px;
   box-sizing: border-box;
   width: 50%;
-
-}
-
-span.leftColumn span, span.leftColumn em, span.rightColumn span{
-  cursor: pointer;
 }
 
 span.leftColumn {

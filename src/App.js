@@ -100,8 +100,6 @@ class App extends Component {
       <div>
         {!this.state.inApp && <h1>{l18n.title}: </h1>}
         {!this.state.inApp && <h2>{l18n.subTitle}</h2>}
-        {this.state.inApp && <ListSelector className="close" itemClick={() => window.location.search += "&close"} 
-          items={[{name:l18n.close, shortcut:"c", key:"0"}]} />}
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
           items={db.dictionaries.getTests()} />
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
