@@ -82,7 +82,7 @@ class TestResults extends Component {
           <div 
             itemScope
             key={i.id} 
-            className={selectedCount-- > 0 ? "item selected" : "item"} 
+            className={selectedCount-- > 0 ? "item selected" : (expandedId === i.id) ? "item highlight" : "item"} 
             id={selectedCount === 0 ? "last" : null}
             title={this.getAllResults(i)}
             onClick={

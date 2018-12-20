@@ -33,6 +33,10 @@ html {
   -ms-overflow-style: none;
 }
 
+div.pad{
+  padding-top: 20px;
+}
+
 h1, h2{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -54,10 +58,10 @@ ul {
 }
 
 li{
-    cursor: pointer;
-    display: inline;
-    padding: 3px 7px 3px 7px;
-    line-height: 26px;
+  cursor: pointer;
+  display: inline;
+  padding: 3px 7px 3px 7px;
+  line-height: 26px;
 }
 
 li:not(:first-child)::before {
@@ -142,6 +146,11 @@ div.item{
   flex-wrap: wrap;
 }
 
+div.item.highlight{
+  background-color: #E4E4E4;
+}
+
+
 div.item em {
   font-style: normal;
 }
@@ -197,9 +206,10 @@ span.rightColumn span{
 span.centerColumn {
   width: 100%;
   background-color: #F0F0F0;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
+  padding-top: 2px;
   font-family: IBMPlexMono-Italic;
-  color: #606060;
+  color: black;
 }
 
 span.centerColumn.noHighlight {

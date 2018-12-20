@@ -23,6 +23,7 @@ class App extends Component {
       selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
       selectedResultIds: this.getSelectedIdsFromParam(),
       inApp: this.urlParams.get("inapp") !== null,
+      inAppPlatform: this.urlParams.get("inapp"),
       device: ""
     };
   }
@@ -60,7 +61,6 @@ class App extends Component {
       this.urlParams.delete(this.selectedIdsParam);
     }
     window.history.replaceState({},null,"?"+this.urlParams.toString());
-    //window.location.hash = this.urlParams.toString();
   }
 
   testClick(key){
@@ -97,7 +97,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className={this.state.inAppPlatform !== "WPF" ? "pad" : null}>
         {!this.state.inApp && <h1>{l18n.title}: </h1>}
         {!this.state.inApp && <h2>{l18n.subTitle}</h2>}
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
