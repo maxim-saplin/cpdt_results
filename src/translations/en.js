@@ -36,8 +36,8 @@ const translations =
     close: "[C]lose",
     yourDevice: "Your device",
 
-    result_SRW: "Sq.R÷W",
-    result_RRW: "Rn.R÷W",
+    result_SRW: "Seq.W÷R",
+    result_RRW: "Rnd.W÷R",
     result_MEM: "Mem.cpy",
 }
 

@@ -36,8 +36,8 @@ const translations =
     close: "[C] Закрыть",
     yourDevice: "Ваше устройство",
 
-    result_SRW: "Пс.Ч÷З",
-    result_RRW: "Пр.Ч÷З",
+    result_SRW: "Посл.З÷Ч",
+    result_RRW: "Прзв.З÷Ч",
     result_MEM: "Коп.пам",
 }
 
