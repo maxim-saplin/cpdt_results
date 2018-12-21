@@ -14,18 +14,50 @@ class App extends Component {
     this.searchChanged = this.searchChanged.bind(this);
     this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
+    this.wpf = "wpf";
+    this.android = "android";
+    this.macos = "macos";
 
     this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
     this.selectedIdsParam = "selected";
 
+    let selectedResultIds = this.getSelectedIdsFromParam()
+    let inAppPlatform = this.urlParams.get("inapp") ? this.urlParams.get("inapp").toLocaleLowerCase() : null;
+    let selectedPlatforms = db.dictionaries.getPlatforms().map(p => p.key);
+
+    ({ selectedPlatforms, selectedResultIds } = this.inAppAdjustments(inAppPlatform, selectedPlatforms, selectedResultIds));
+
     this.state = {
       selectedTest: db.dictionaries.getTests()[0].key,
-      selectedPlatforms: db.dictionaries.getPlatforms().map(p => p.key),
-      selectedResultIds: this.getSelectedIdsFromParam(),
-      inApp: this.urlParams.get("inapp") !== null,
-      inAppPlatform: this.urlParams.get("inapp"),
+      selectedResultIds: selectedResultIds,
+      inAppPlatform: inAppPlatform,
+      selectedPlatforms: selectedPlatforms,
       device: ""
     };
+
+    this.title = this.urlParams.get("ttl") ? decodeURIComponent(this.urlParams.get("ttl")) : null;
+  }
+
+  inAppAdjustments(inAppPlatform, selectedPlatforms, selectedResultIds) {
+    if (inAppPlatform) {
+      if (inAppPlatform === this.wpf) selectedPlatforms = [db.dictionaries.Windows];
+      else if (inAppPlatform === this.android) selectedPlatforms = [db.dictionaries.Android];
+      else if (inAppPlatform === this.macos) selectedPlatforms = [db.dictionaries.macOS];
+      let yourDevice = this.urlParams.get("yd");
+      if (yourDevice) {
+        let yd = null;
+        try {
+          yd = JSON.parse(yourDevice);
+          if (yd) {
+            yd.platform = selectedPlatforms[0];
+            db.results.addYourDeviceResult(yd);
+          }
+          selectedResultIds = [db.results.yourDeviceId];
+        }
+        catch { }
+      }
+    }
+    return { selectedPlatforms, selectedResultIds };
   }
 
   getSelectedIdsFromParam(){
@@ -95,15 +127,27 @@ class App extends Component {
     this.setSelectedIds(selectedResultIds);
   }
 
+  setTitle(title){
+    document.title = title;
+  }
+
   render() {
+    let stl = this.setTitle;
+
+    if (this.title){ // TestResults can change title, upon first load override title with the value from parm
+      stl(this.title);
+      this.title = null;
+      stl = null;
+    }
+
     return (
-      <div className={this.state.inAppPlatform !== "WPF" ? "pad" : null}>
-        {!this.state.inApp && <h1>{l18n.title}: </h1>}
-        {!this.state.inApp && <h2>{l18n.subTitle}</h2>}
-        <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
-          items={db.dictionaries.getTests()} />
+      <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
+        {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
+        {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
+        <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
+          items={db.dictionaries.getTests()} />
         <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected}/>
         <br/>
         <TestResults 
@@ -113,9 +157,13 @@ class App extends Component {
           selectedIdRemoved={this.selectedIdRemoved}
           resultSelected={this.resultSelected}
           device={this.state.device}
+          setTitle={stl}
         />
       </div>
     );
+
+
+
   }
 }
 

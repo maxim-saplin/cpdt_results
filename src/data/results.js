@@ -1,5 +1,22 @@
+import l18n from '../translations';
+
 const results = 
 {
+  addYourDeviceResult: function(yd){
+    if (!yd.seqWrite && !yd.seqRead && !yd.randWrite && !yd.randRead && !yd.memCopy){
+      console.log("Invaid 'Your device' data");
+      return;
+    }
+
+    if (!yd.device) yd.device = l18n.yourDevice;
+
+    yd.id = this.yourDeviceId;
+    yd.deviceDetail = "";
+
+    if (this.data.results[this.data.results.length-1].id === yd.id) this.data.results.pop();
+    this.data.results.push(yd);
+  },
+
   getResults: function(platfroms, test, device, excludeIds){
     let result = this.data.results;
     
@@ -30,6 +47,7 @@ const results =
 
   getResultById: function(id){
     if (id < 0 || id > this.data.results.length) return null;
+    if (id === 0 && this.data.results[this.data.results.length-1].id === 0) return this.data.results[this.data.results.length-1];
 
     return this.data.results[id-1];
   },
@@ -55,5 +73,6 @@ const results =
 }
 
 results.lastResultId = null;
+results.yourDeviceId = 0;
 
 export default results;

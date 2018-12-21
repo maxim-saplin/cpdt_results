@@ -13,7 +13,7 @@ class TestResult extends PureComponent {
           </em>
           <br />
           <span className="greyed" itemProp="description">
-            {i.deviceYear}, {i.deviceDetail}
+            {i.deviceYear}{i.deviceDetail && ","} {i.deviceDetail}
           </span>
         </span>
         <span className="rightColumn">

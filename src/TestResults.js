@@ -49,6 +49,7 @@ class TestResults extends Component {
   }
 
   render() {
+   
     let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest, this.props.device, this.props.selectedResultIds);
     let selectedCount = -1;
     this.deletableId = null;
@@ -69,7 +70,7 @@ class TestResults extends Component {
       }
     }
 
-    document.title = title + l18n.pageTitle;
+    if (this.props.setTitle) this.props.setTitle(title + l18n.pageTitle);
     
     this.keyboardEventsSubscription();
 
@@ -108,8 +109,8 @@ class TestResults extends Component {
               item={i}
               selectedTest={this.props.selectedTest }
               selectedIdRemoved={this.props.selectedIdRemoved}
-              closableX={selectedCount > 0}
-              closableEsc={selectedCount === 0}
+              closableX={selectedCount > 0 && i.id !== db.results.yourDeviceId}
+              closableEsc={selectedCount === 0 && i.id !== db.results.yourDeviceId}
             />
             {((selectedCount >= 0) || (expandedId === i.id)) && <TestResultDetails item={i} noHighlight={expandedId === i.id}/> }
           </div>)}
