@@ -107,6 +107,7 @@ class TestResults extends Component {
           >
             <TestResult
               item={i}
+              percent={i.percent} // hack to make PureComponent re-render, somehow for selected id's percent inside 'item' is'nt considered as changed, though the filed differs. For non selcted ids it works fine
               selectedTest={this.props.selectedTest }
               selectedIdRemoved={this.props.selectedIdRemoved}
               closableX={selectedCount > 0 && i.id !== db.results.yourDeviceId}
