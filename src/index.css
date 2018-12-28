@@ -187,13 +187,13 @@ span.rightColumn {
 }
 
 span.rightColumn span{
-  background-color: #5757ff;
+  background-color: #0000FF;
   color: white;
   height: 26px;
   display: block;
   float: left;
   white-space: nowrap;
-  text-shadow: 2px 2px #5757ff;
+  text-shadow: 2px 2px #0000FF;
   padding: 4px;
   box-sizing: border-box;
 }
@@ -223,6 +223,10 @@ span.centerColumn .ttl{
 
 span.centerColumn .res{
   font-size: 14px;
+}
+
+span.centerColumn .res em{
+  text-decoration: underline;
 }
 
 span.centerColumn .unit{

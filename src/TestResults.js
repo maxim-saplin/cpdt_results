@@ -113,7 +113,7 @@ class TestResults extends Component {
               closableX={selectedCount > 0 && i.id !== db.results.yourDeviceId}
               closableEsc={selectedCount === 0 && i.id !== db.results.yourDeviceId}
             />
-            {((selectedCount >= 0) || (expandedId === i.id)) && <TestResultDetails item={i} noHighlight={expandedId === i.id}/> }
+            {((selectedCount >= 0) || (expandedId === i.id)) && <TestResultDetails item={i} noHighlight={expandedId === i.id} selectedTest={this.props.selectedTest }/> }
           </div>)}
       </>)
     }
