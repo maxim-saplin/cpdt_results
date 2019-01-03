@@ -18,20 +18,33 @@ const results =
   },
 
   getResults: function(platfroms, test, device, excludeIds){
-    let result = this.data.results;
+    let filters = [];
+
+    filters.push(r => !r.hidden);
     
     if (platfroms && Array.isArray(platfroms)){
-      result = result.filter(r => platfroms.includes(r.platform));
+      filters.push(r => platfroms.includes(r.platform));
     }
 
     if (device){
       device = device.trim().toLowerCase();
-      if (device) result = result.filter(r => r.device.toLowerCase().includes(device));
+      if (device) filters.push(r => r.device.toLowerCase().includes(device));
     }
 
     if (excludeIds && excludeIds.length > 0){
-      result = result.filter(r => !excludeIds.includes(r.id));
+      filters.push(r => !excludeIds.includes(r.id));
     }
+
+    let result = this.data.results.filter(r => 
+      {
+        let condition = true;
+        for (let i = 0; i < filters.length; i++){
+          condition &= filters[i](r);
+          if (!condition) return false;
+        }
+
+        return true;
+      });
 
     if (test){
       result.sort(
