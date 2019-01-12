@@ -5,12 +5,17 @@ import DownloadLinks from './DownloadLinks';
 export default function About(props){
     return (
         <>
-            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B] Назад</PressableLink>
-            <br/><br/><br/>
-            <h1>Скачать приложение CPDT</h1>
-            <br/><br/>
-            <DownloadLinks />
-            <br/><br/><br/><br/>
+            {props.inApp && <><br/><br/></>}
+            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
+            <br/>
+            {!props.inApp &&
+            <>
+                <br/><br/>
+                <h1>Скачать приложение CPDT</h1>
+                <br/><br/>
+                <DownloadLinks />
+                <br/><br/><br/><br/>
+            </>}
 
             <h1>Как получены результаты</h1>
             <br/>

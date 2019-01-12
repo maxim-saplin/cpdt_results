@@ -189,8 +189,8 @@ class App extends Component {
         />
       </div>
       : l18n.locale === l18n.ruLocale 
-        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass}/> 
-        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass}/>);
+        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/> 
+        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/>);
   }
 }
 

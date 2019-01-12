@@ -5,12 +5,17 @@ import DownloadLinks from './DownloadLinks';
 export default function About(props){
     return (
         <>
+            {props.inApp && <><br/><br/></>}
             <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
-            <br/><br/><br/>
-            <h1>Download CPDT App</h1>
-            <br/><br/>
-            <DownloadLinks />
-            <br/><br/><br/><br/>
+            <br/>
+            {!props.inApp &&
+            <>
+                <br/><br/>
+                <h1>Download CPDT App</h1>
+                <br/><br/>
+                <DownloadLinks />
+                <br/><br/><br/><br/>
+            </>}
 
             <h1>How are the Results Obtained</h1>
             <br/>
