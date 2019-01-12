@@ -5,7 +5,7 @@ import DownloadLinks from './DownloadLinks';
 export default function About(props){
     return (
         <>
-            {props.inApp && <><br/><br/></>}
+            {props.inApp && <br/>}
             <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
             <br/>
             {!props.inApp &&
