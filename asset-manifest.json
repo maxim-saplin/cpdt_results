@@ -1,12 +1,12 @@
 {
   "main.css": "/cpdt_results/static/css/main.bfa2397b.chunk.css",
-  "main.js": "/cpdt_results/static/js/main.6afd4b21.chunk.js",
-  "main.js.map": "/cpdt_results/static/js/main.6afd4b21.chunk.js.map",
+  "main.js": "/cpdt_results/static/js/main.c52b7ae0.chunk.js",
+  "main.js.map": "/cpdt_results/static/js/main.c52b7ae0.chunk.js.map",
   "static/js/1.3b15dfe2.chunk.js": "/cpdt_results/static/js/1.3b15dfe2.chunk.js",
   "static/js/1.3b15dfe2.chunk.js.map": "/cpdt_results/static/js/1.3b15dfe2.chunk.js.map",
   "runtime~main.js": "/cpdt_results/static/js/runtime~main.95b7c02d.js",
   "runtime~main.js.map": "/cpdt_results/static/js/runtime~main.95b7c02d.js.map",
-  "static/media/index.css": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff",
+  "static/media/index.css": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff",
   "static/media/windows.svg": "/cpdt_results/static/media/windows.15e72531.svg",
   "static/media/google-play.svg": "/cpdt_results/static/media/google-play.7041ae46.svg",
   "static/media/apk.svg": "/cpdt_results/static/media/apk.a00fa3a4.svg",
@@ -15,6 +15,6 @@
   "static/media/index_dark.css": "/cpdt_results/static/media/EnWhite.bebad3b9.png",
   "static/css/main.bfa2397b.chunk.css.map": "/cpdt_results/static/css/main.bfa2397b.chunk.css.map",
   "index.html": "/cpdt_results/index.html",
-  "precache-manifest.c3f656b79bd704f5299bb9da38a3dfc8.js": "/cpdt_results/precache-manifest.c3f656b79bd704f5299bb9da38a3dfc8.js",
+  "precache-manifest.bacd38ac2ae5a33e7515fbbead1e89bf.js": "/cpdt_results/precache-manifest.bacd38ac2ae5a33e7515fbbead1e89bf.js",
   "service-worker.js": "/cpdt_results/service-worker.js"
 }
