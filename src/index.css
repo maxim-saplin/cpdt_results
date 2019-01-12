@@ -60,6 +60,10 @@ a.leftCorner{
   cursor: pointer;
 }
 
+a.leftCorner.inapp{
+  position: static;
+}
+
 a{
   display: inline-block;
   padding-right: 14px;

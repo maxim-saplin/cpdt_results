@@ -5,7 +5,7 @@ import DownloadLinks from './DownloadLinks';
 export default function About(props){
     return (
         <>
-            <PressableLink className="leftCorner" onClick={props.toggleAbout}>[B]ack</PressableLink>
+            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
             <br/><br/><br/>
             <h1>Download CPDT App</h1>
             <br/><br/>

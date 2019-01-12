@@ -161,12 +161,17 @@ class App extends Component {
 
     this.renderCounter++;
 
+    let helpLinkClass = "leftCorner";
+    if (this.state.inAppPlatform) helpLinkClass +=" inapp";
+    if (this.renderCounter < 2 ) helpLinkClass +=" textColorVibration";
+
     return (
       !this.state.showAbout ?
       <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
         {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
         {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
-        <PressableLink className={this.renderCounter > 1 ? "leftCorner" : "leftCorner textColorVibration"} onClick={this.toggleAbout}>[?]</PressableLink>
+        <PressableLink className={helpLinkClass} onClick={this.toggleAbout}>[?]</PressableLink>
+        
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
@@ -184,8 +189,8 @@ class App extends Component {
         />
       </div>
       : l18n.locale === l18n.ruLocale 
-        ? <AboutRu toggleAbout={this.toggleAbout}/> 
-        : <AboutEn toggleAbout={this.toggleAbout}/>);
+        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass}/> 
+        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass}/>);
   }
 }
 
