@@ -93,7 +93,7 @@ div.text{
 }
 
 img#aboutRu{
-  content: url(/img/RuBlack.png);
+  content: url(../../img/RuBlack.png);
   width: 100%;
   max-width: 560px;
   padding: 10px 10px 10px 10px;
@@ -101,7 +101,7 @@ img#aboutRu{
 }
 
 img#aboutEn{
-  content: url(/img/EnBlack.png);
+  content: url(../../img/EnBlack.png);
   width: 100%;
   max-width: 560px;
   padding: 10px 10px 10px 10px;
