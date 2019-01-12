@@ -21,7 +21,8 @@ export default function About(props){
             <br/>
             <div className="text">
                 <p>
-                <em>Cross Platform Disk Test (CPDT)</em> application is used to measure storage performance. See download links above.
+                <em>Cross Platform Disk Test (CPDT)</em> application is used to measure storage performance. 
+                {!props.inApp && <> See download links above.</>}
                 </p>
                 <p>
                 At least 3 test runs are done, 

@@ -21,8 +21,8 @@ export default function About(props){
             <br/>
             <div className="text">
                 <p>
-                Для измерения производительности используется приложение <em>Cross Platform Disk Test (CPDT)</em>, 
-                скачать кооторое можно по ссылкам выше.
+                Для измерения производительности используется приложение <em>Cross Platform Disk Test (CPDT)</em>
+                {!props.inApp && <>, скачать кооторое можно по ссылкам выше</>}.
                 </p>
                 <p>
                 Выполняется по меньшей мере 3 тестовых прогона, 
