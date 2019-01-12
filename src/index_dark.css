@@ -46,11 +46,11 @@ body.dark span.hint{
 }
 
 body.dark img#aboutRu{
-  content: url(../../img/RuWhite.png);
+  content: url(./img/RuWhite.png);
 }
 
 body.dark img#aboutEn{
-  content: url(../../img/EnWhite.png);
+  content: url(./img/EnWhite.png);
 }
 
 @keyframes fade-in-out-dark {
