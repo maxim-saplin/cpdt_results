@@ -1,5 +1,8 @@
 https://maxim-saplin.github.io/cpdt_results/
 https://maxim-saplin.github.io/cpdt_results/?lang=ru
+https://maxim-saplin.github.io/cpdt_results/?about=
+https://maxim-saplin.github.io/cpdt_results/?about=&lang=ru
+
 https://maxim-saplin.github.io/cpdt_results/?selected=1
 https://maxim-saplin.github.io/cpdt_results/?selected=2
 https://maxim-saplin.github.io/cpdt_results/?selected=3
@@ -9,7 +12,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=6
 https://maxim-saplin.github.io/cpdt_results/?selected=7
 https://maxim-saplin.github.io/cpdt_results/?selected=8
 https://maxim-saplin.github.io/cpdt_results/?selected=9
-https://maxim-saplin.github.io/cpdt_results/?selected=10
+
 https://maxim-saplin.github.io/cpdt_results/?selected=11
 https://maxim-saplin.github.io/cpdt_results/?selected=12
 https://maxim-saplin.github.io/cpdt_results/?selected=13
@@ -45,6 +48,13 @@ https://maxim-saplin.github.io/cpdt_results/?selected=42
 https://maxim-saplin.github.io/cpdt_results/?selected=43
 https://maxim-saplin.github.io/cpdt_results/?selected=44
 https://maxim-saplin.github.io/cpdt_results/?selected=45
+https://maxim-saplin.github.io/cpdt_results/?selected=46
+https://maxim-saplin.github.io/cpdt_results/?selected=47
+https://maxim-saplin.github.io/cpdt_results/?selected=48
+https://maxim-saplin.github.io/cpdt_results/?selected=49
+https://maxim-saplin.github.io/cpdt_results/?selected=50
+https://maxim-saplin.github.io/cpdt_results/?selected=51
+https://maxim-saplin.github.io/cpdt_results/?selected=52
 https://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=2&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=3&lang=ru
@@ -54,7 +64,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=6&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=7&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=8&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=9&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?selected=10&lang=ru
+
 https://maxim-saplin.github.io/cpdt_results/?selected=11&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=12&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=13&lang=ru
@@ -90,7 +100,16 @@ https://maxim-saplin.github.io/cpdt_results/?selected=42&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=43&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=44&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=45&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=46&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=47&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=48&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=49&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=50&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=51&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=52&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?ttl=NTFS+vs.+APFS+Performance+on+Mac+-+CPDT&selected=4%2C5
 https://maxim-saplin.github.io/cpdt_results/?ttl=Android+Full-disk+Encryption+Performance+-+CPDT&selected=32%2C1%2C38%2C39%2C35%2C36
 https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NTFS%20Performance:%20Tuxera%20vs.%20Paragon%20vs.%20ntfs-3g%20with%20OSXFUSE
 https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance
+https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT
+https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52
