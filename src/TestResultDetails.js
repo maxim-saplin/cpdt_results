@@ -10,11 +10,11 @@ class TestResultDetails extends PureComponent {
       <span className={this.props.noHighlight ? "centerColumn noHighlight" : "centerColumn"}>
         <span className="ttl">{l18n.result_SRW}:</span>
         <span className="res">
-          {this.props.selectedTest == db.dictionaries.seqWrite ? 
+          {this.props.selectedTest === db.dictionaries.seqWrite ? 
           <em>{i[db.dictionaries.seqWrite]}</em> :
           i[db.dictionaries.seqWrite]}          
           ÷
-          {this.props.selectedTest == db.dictionaries.seqRead ? 
+          {this.props.selectedTest === db.dictionaries.seqRead ? 
           <em>{i[db.dictionaries.seqRead]}</em> :
           i[db.dictionaries.seqRead]}   
         </span>
@@ -22,11 +22,11 @@ class TestResultDetails extends PureComponent {
 
         <span className="ttl">{l18n.result_RRW}:</span>
         <span className="res">
-          {this.props.selectedTest == db.dictionaries.randWrite ? 
+          {this.props.selectedTest === db.dictionaries.randWrite ? 
           <em>{i[db.dictionaries.randWrite]}</em> :
           i[db.dictionaries.randWrite]}          
           ÷
-          {this.props.selectedTest == db.dictionaries.randRead ? 
+          {this.props.selectedTest === db.dictionaries.randRead ? 
           <em>{i[db.dictionaries.randRead]}</em> :
           i[db.dictionaries.randRead]}   
         </span>
@@ -34,7 +34,7 @@ class TestResultDetails extends PureComponent {
 
         <span className="ttl">{l18n.result_MEM}:</span>
         <span className="res">
-          {this.props.selectedTest == db.dictionaries.memCopy ? 
+          {this.props.selectedTest === db.dictionaries.memCopy ? 
           <em>{i[db.dictionaries.memCopy]}</em> :
           i[db.dictionaries.memCopy]}          
         </span>

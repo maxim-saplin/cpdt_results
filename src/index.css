@@ -38,8 +38,6 @@ div.pad{
 }
 
 h1, h2{
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: inline;
   font-size: 24px;
   font-weight: normal;
@@ -51,6 +49,63 @@ h1{
 
 h2{
   font-family: IBMPlexMono-Regular;
+}
+
+a.leftCorner{
+  padding: 10px 10px 10px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+a{
+  display: inline-block;
+  padding-right: 14px;
+  color: black;
+}
+
+a img{
+  height: 24px;
+}
+
+.textColorVibration{
+  animation: change-color 1.9s 2.5s forwards ease;
+}
+
+@keyframes change-color {
+  0% { font-family: IBMPlexMono-SemiBold}
+  10% { color: #FF0000; background-color: #00FF00}
+  22% { color: #00FF00; background-color: #0000FF}
+  36% { color: #FF00FF; background-color: #FF0000}
+  64% { color: #00FFFF; background-color: #000000}
+  80% { color: #FFFF00; background-color: transparent}
+}
+
+div.text{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 780px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+img#aboutRu{
+  content: url(/img/RuBlack.png);
+  width: 100%;
+  max-width: 560px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+img#aboutEn{
+  content: url(/img/EnBlack.png);
+  width: 100%;
+  max-width: 560px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
 }
 
 ul {

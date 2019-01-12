@@ -2,9 +2,6 @@ import en from './en';
 import ru from './ru';
 import fr from './fr';
 
-const enLocale = "en";
-const ruLocale = "ru";
-const frLocale = "fr";
 const langParam = "lang";
 
 //Default texts
@@ -15,7 +12,8 @@ translations.init = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const param = urlParams.get(langParam);
 
-    let lang = enLocale;
+    let lang = this.enLocale;
+    this.locale = lang;
 
     if (param) {
         lang = param.toLocaleLowerCase();
@@ -24,20 +22,26 @@ translations.init = function() {
         lang = navigator.language.toLowerCase();
     }
 
-    let locale;
+    let localeObj;
 
-    if (lang.includes(ruLocale)) {
-        locale = ru;
+    if (lang.includes(this.ruLocale)) {
+        localeObj = ru;
+        this.locale = this.ruLocale;
     }
-    else if (lang.includes(frLocale)) {
-        locale = fr;
+    else if (lang.includes(this.frLocale)) {
+        localeObj = fr;
+        this.locale = this.frLocale;
     }
 
-    if (locale)
+    if (localeObj)
         Object.keys(translations).forEach((key) => {
-            if (locale[key])
-                translations[key] = locale[key];
+            if (localeObj[key])
+                translations[key] = localeObj[key];
         });
 };
+
+translations.enLocale = "en";
+translations.ruLocale = "ru";
+translations.frLocale = "fr";
 
 export default translations;

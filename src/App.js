@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import l18n from './translations';
+import PressableLink from './PressableLink'
 import ListSelector from './ListSelector'
 import Search from './Search'
 import TestResults from './TestResults'
+import AboutEn from './AboutEn'
+import AboutRu from './AboutRu'
 import db from './data';
 
 class App extends Component {
@@ -14,12 +17,14 @@ class App extends Component {
     this.searchChanged = this.searchChanged.bind(this);
     this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
+    this.toggleAbout = this.toggleAbout.bind(this);
     this.wpf = "wpf";
     this.android = "android";
     this.macos = "macos";
 
     this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
     this.selectedIdsParam = "selected";
+    this.aboutParam = "about";
 
     let selectedResultIds = this.getSelectedIdsFromParam()
     let inAppPlatform = this.urlParams.get("inapp") ? this.urlParams.get("inapp").toLocaleLowerCase() : null;
@@ -32,10 +37,13 @@ class App extends Component {
       selectedResultIds: selectedResultIds,
       inAppPlatform: inAppPlatform,
       selectedPlatforms: selectedPlatforms,
-      device: ""
+      device: "",
+      showAbout: this.urlParams.has(this.aboutParam)
     };
 
     this.title = this.urlParams.get("ttl") ? decodeURIComponent(this.urlParams.get("ttl")) : null;
+
+    this.renderCounter = 0;
   }
 
   inAppAdjustments(inAppPlatform, selectedPlatforms, selectedResultIds) {
@@ -131,6 +139,17 @@ class App extends Component {
     document.title = title;
   }
 
+  toggleAbout(){
+    let showAbout = !this.state.showAbout;
+
+    this.setState({showAbout: showAbout});
+
+    if (showAbout) this.urlParams.set(this.aboutParam, "");
+    else this.urlParams.delete(this.aboutParam);
+
+    window.history.replaceState({},null,"?"+this.urlParams.toString());
+  }
+
   render() {
     let stl = this.setTitle;
 
@@ -140,10 +159,14 @@ class App extends Component {
       stl = null;
     }
 
+    this.renderCounter++;
+
     return (
+      !this.state.showAbout ?
       <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
         {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
         {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
+        <PressableLink className={this.renderCounter > 1 ? "leftCorner" : "leftCorner textColorVibration"} onClick={this.toggleAbout}>[?]</PressableLink>
         <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
           items={db.dictionaries.getPlatforms()} selectAll={true} />
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
@@ -160,10 +183,9 @@ class App extends Component {
           setTitle={stl}
         />
       </div>
-    );
-
-
-
+      : l18n.locale === l18n.ruLocale 
+        ? <AboutRu toggleAbout={this.toggleAbout}/> 
+        : <AboutEn toggleAbout={this.toggleAbout}/>);
   }
 }
 

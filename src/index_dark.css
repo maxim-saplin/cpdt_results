@@ -3,6 +3,10 @@ body.dark {
     color:#CCCCCC;
 }
 
+body.dark  a{
+  color: #CCCCCC;
+}
+
 body.dark button{
   color:#808080;
 }
@@ -39,6 +43,14 @@ body.dark span.centerColumn .ttl{
 body.dark span.hint{
   background-color: #A8A8A8;
   animation: fade-in-out-dark 4.5s 0.5s forwards ease;
+}
+
+body.dark img#aboutRu{
+  content: url(/img/RuWhite.png);
+}
+
+body.dark img#aboutEn{
+  content: url(/img/EnWhite.png);
 }
 
 @keyframes fade-in-out-dark {
