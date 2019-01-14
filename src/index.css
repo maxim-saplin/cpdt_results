@@ -159,6 +159,7 @@ span.searchBox{
   box-sizing: border-box;
   text-align: right;
   padding-right: 6px;
+  padding-bottom: 12px;
   display: inline-block;
 }
 
@@ -187,6 +188,9 @@ span[contenteditable="true"]{
   color : transparent;
   text-shadow : 0 0 0 #000;
   white-space: nowrap;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 span[contenteditable="true"] br {

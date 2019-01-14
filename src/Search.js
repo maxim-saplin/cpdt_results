@@ -8,6 +8,7 @@ class Search extends PureComponent {
 
     this.textChanged = this.textChanged.bind(this);
     this.onKeyPress = this.onKeyPress.bind(this);
+    this.moveCursorToEnd = this.moveCursorToEnd.bind(this);
 
     this.state = {
       extraSpaces: true, 
@@ -39,6 +40,23 @@ class Search extends PureComponent {
     else this.enterPressed = false;
   }
 
+  moveCursorToEnd(el){
+    if(el.innerText && document.createRange)
+    {
+      window.setTimeout(() =>
+        {
+          let selection = document.getSelection();
+          let range = document.createRange();
+      
+          range.setStart(el.childNodes[0],el.innerText.length);
+          range.collapse(true);
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+      ,1);
+    }
+  }
+
   render() {
     return (
       <>      
@@ -48,7 +66,7 @@ class Search extends PureComponent {
             ref={this.textInput} 
             onInput={this.textChanged} 
             onKeyPress={this.onKeyPress}
-            onFocus={() => {this.setState({blink:true})}} 
+            onFocus={(e) => {this.setState({blink:true}); this.moveCursorToEnd(e.nativeEvent.target)}} 
             onBlur={() => {this.setState({blink:false})}}
           >
           </span>
