@@ -153,3 +153,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NT
 https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance
 https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT
 https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52
+https://maxim-saplin.github.io/cpdt_results/?selected=69%2C68&ttl=Xiaomi%20Mi%208%20vs.%20Pocophone%20F1%20Performance
+https://maxim-saplin.github.io/cpdt_results/?ttl=Xiaomi+Mi+8%20Lite+vs.+Mi%208%20SE%20vs.%20Mi%208+Performance&selected=67%2C1%2C68
+https://maxim-saplin.github.io/cpdt_results/?ttl=Samsung%20Galaxy%20S8+vs.+Galaxy%20Note%208+Performance&selected=34%2C33%2C61
+https://maxim-saplin.github.io/cpdt_results/?ttl=Huawei%20P20+vs.+Huawei%20Mate%2020+Performance&selected=57%2C42
