@@ -98,16 +98,22 @@ div.text{
 
 img#aboutRu{
   content: url(./img/RuBlack.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  max-width: 560px;
+  max-width: 460px;
   padding: 10px 10px 10px 10px;
   box-sizing: border-box;
 }
 
 img#aboutEn{
   content: url(./img/EnBlack.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  max-width: 560px;
+  max-width: 460px;
   padding: 10px 10px 10px 10px;
   box-sizing: border-box;
 }
