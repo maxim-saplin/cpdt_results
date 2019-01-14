@@ -146,7 +146,7 @@ button{
   height: 24px;
   font-family: IBMPlexMono-Regular;
   font-size: 14px;
-  width: 17%;
+  width: 18%;
   overflow-x: hidden;
   float: right;
   margin-right: 3px;
@@ -271,9 +271,8 @@ span.rightColumn span{
 span.centerColumn {
   width: 100%;
   background-color: #F0F0F0;
-  padding-bottom: 6px;
-  padding-top: 2px;
-  font-family: IBMPlexMono-Italic;
+  padding-bottom: 8px;
+  padding-top: 8px;
   color: black;
 }
 
@@ -287,7 +286,7 @@ span.centerColumn .ttl{
 }
 
 span.centerColumn .res{
-  font-size: 14px;
+  font-size: 15px;
 }
 
 span.centerColumn .res em{
