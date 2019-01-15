@@ -1,6 +1,8 @@
 const translations = 
 {
-    pageTitle: "CPDT: Storage Performance Database",
+    pageTitle: "CPDT Benchmark: Storage Performance Database",
+    aboutTitle:  "CPDT Benchmark: About App",
+    downloadTitle:  "CPDT Benchmark: Download",
     title: "SSD/HDD Benchmark",
     subTitle: "Performance Chart",
     seqWrite: "[S]equential write",

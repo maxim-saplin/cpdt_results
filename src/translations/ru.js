@@ -1,6 +1,8 @@
 const translations = 
 {
-    pageTitle:  "CPDT: База производительности памяти",
+    pageTitle:  "Бенчмарк CPDT: База производительности памяти",
+    aboutTitle:  "Бенчмарк CPDT: О программе",
+    downloadTitle:  "Бенчмарк CPDT: Скачать",
     title: "Тестирование SSD/HDD",
     subTitle: "Скорости устройств",
     seqWrite: "[П]оследовательная запись",

@@ -25,6 +25,7 @@ class App extends Component {
     this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
     this.selectedIdsParam = "selected";
     this.aboutParam = "about";
+    this.showDownloadParam = "download";
 
     let selectedResultIds = this.getSelectedIdsFromParam()
     let inAppPlatform = this.urlParams.get("inapp") ? this.urlParams.get("inapp").toLocaleLowerCase() : null;
@@ -38,7 +39,8 @@ class App extends Component {
       inAppPlatform: inAppPlatform,
       selectedPlatforms: selectedPlatforms,
       device: "",
-      showAbout: this.urlParams.has(this.aboutParam)
+      showAbout: this.urlParams.has(this.aboutParam),
+      showAbout: this.urlParams.has(this.showDownloadParam)
     };
 
     this.title = this.urlParams.get("ttl") ? decodeURIComponent(this.urlParams.get("ttl")) : null;
@@ -158,6 +160,11 @@ class App extends Component {
       this.title = null;
       stl = null;
     }
+    else {
+      if (this.state.showAbout) this.setTitle(l18n.aboutTitle);
+      else if (this.state.showDownload) this.setTitle(l18n.downloadTitle);
+      else this.setTitle(l18n.title);
+    }
 
     this.renderCounter++;
 
@@ -166,7 +173,7 @@ class App extends Component {
     if (this.renderCounter < 2 ) helpLinkClass +=" textColorVibration";
 
     return (
-      !this.state.showAbout ?
+      !this.state.showAbout && !this.state.showDownload ?
       <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
         {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
         {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
