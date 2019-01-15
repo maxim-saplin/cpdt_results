@@ -33,11 +33,11 @@ body.dark div.item.selected{
 
 body.dark span.centerColumn {
   background-color: #1B1B1B;
-  color: grey;
+  color: #CCCCCC;
 }
 
 body.dark span.centerColumn .ttl{
-  color: #555555;
+  color: #808080;
 }
 
 body.dark span.hint{
