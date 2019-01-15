@@ -40,7 +40,7 @@ class App extends Component {
       selectedPlatforms: selectedPlatforms,
       device: "",
       showAbout: this.urlParams.has(this.aboutParam),
-      showAbout: this.urlParams.has(this.showDownloadParam)
+      showDownload: this.urlParams.has(this.showDownloadParam)
     };
 
     this.title = this.urlParams.get("ttl") ? decodeURIComponent(this.urlParams.get("ttl")) : null;
