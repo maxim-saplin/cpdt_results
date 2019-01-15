@@ -2,6 +2,8 @@ https://maxim-saplin.github.io/cpdt_results/
 https://maxim-saplin.github.io/cpdt_results/?lang=ru
 https://maxim-saplin.github.io/cpdt_results/?about=
 https://maxim-saplin.github.io/cpdt_results/?about=&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?download=
+https://maxim-saplin.github.io/cpdt_results/?download=&lang=ru
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1
 https://maxim-saplin.github.io/cpdt_results/?selected=2
