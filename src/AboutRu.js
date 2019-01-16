@@ -6,7 +6,7 @@ export default function About(props){
     return (
         <>
             {props.inApp && <br/>}
-            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
+            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B] Назад</PressableLink>
             <br/>
             {!props.inApp &&
             <>
