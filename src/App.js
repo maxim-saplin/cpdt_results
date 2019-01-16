@@ -142,12 +142,15 @@ class App extends Component {
   }
 
   toggleAbout(){
-    let showAbout = !this.state.showAbout;
+    let showAbout = !(this.state.showAbout || this.state.showDownload);
 
-    this.setState({showAbout: showAbout});
+    this.setState({showAbout: showAbout, showDownload: false});
 
     if (showAbout) this.urlParams.set(this.aboutParam, "");
-    else this.urlParams.delete(this.aboutParam);
+    else {
+      this.urlParams.delete(this.aboutParam);
+      this.urlParams.delete(this.showDownloadParam);
+    }
 
     window.history.replaceState({},null,"?"+this.urlParams.toString());
   }
