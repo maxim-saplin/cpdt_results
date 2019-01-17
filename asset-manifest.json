@@ -1,7 +1,7 @@
 {
   "main.css": "/cpdt_results/static/css/main.aabc6f3d.chunk.css",
-  "main.js": "/cpdt_results/static/js/main.610396cb.chunk.js",
-  "main.js.map": "/cpdt_results/static/js/main.610396cb.chunk.js.map",
+  "main.js": "/cpdt_results/static/js/main.b9898842.chunk.js",
+  "main.js.map": "/cpdt_results/static/js/main.b9898842.chunk.js.map",
   "static/js/1.9aa9a4f8.chunk.js": "/cpdt_results/static/js/1.9aa9a4f8.chunk.js",
   "static/js/1.9aa9a4f8.chunk.js.map": "/cpdt_results/static/js/1.9aa9a4f8.chunk.js.map",
   "runtime~main.js": "/cpdt_results/static/js/runtime~main.95b7c02d.js",
@@ -12,9 +12,9 @@
   "static/media/apk.svg": "/cpdt_results/static/media/apk.a00fa3a4.svg",
   "static/media/github.svg": "/cpdt_results/static/media/github.990c2b02.svg",
   "static/media/macos.svg": "/cpdt_results/static/media/macos.3a236d88.svg",
-  "static/media/index_dark.css": "/cpdt_results/static/media/EnWhite.bebad3b9.png",
+  "static/media/index_dark.css": "/cpdt_results/static/media/RuWhite.47b2b792.png",
   "static/css/main.aabc6f3d.chunk.css.map": "/cpdt_results/static/css/main.aabc6f3d.chunk.css.map",
   "index.html": "/cpdt_results/index.html",
-  "precache-manifest.00c845b700d402a01de03325473f5690.js": "/cpdt_results/precache-manifest.00c845b700d402a01de03325473f5690.js",
+  "precache-manifest.a7266015d822d22084143d5ef88e61fc.js": "/cpdt_results/precache-manifest.a7266015d822d22084143d5ef88e61fc.js",
   "service-worker.js": "/cpdt_results/service-worker.js"
 }
