@@ -5,8 +5,20 @@ https://maxim-saplin.github.io/cpdt_results/?about=&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?download=
 https://maxim-saplin.github.io/cpdt_results/?download=&lang=ru
 
+https://maxim-saplin.github.io/cpdt_results/?ttl=NTFS+vs.+APFS+Performance+on+Mac+-+CPDT&selected=4%2C5
+https://maxim-saplin.github.io/cpdt_results/?ttl=Android+Full-disk+Encryption+Performance+-+CPDT&selected=32%2C1%2C38%2C39%2C35%2C36
+https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NTFS%20Performance:%20Tuxera%20vs.%20Paragon%20vs.%20ntfs-3g%20with%20OSXFUSE
+https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance
+https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT
+https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52
+https://maxim-saplin.github.io/cpdt_results/?selected=69%2C68&ttl=Xiaomi%20Mi%208%20vs.%20Pocophone%20F1%20Performance
+https://maxim-saplin.github.io/cpdt_results/?ttl=Xiaomi+Mi+8%20Lite+vs.+Mi%208%20SE%20vs.%20Mi%208+Performance&selected=67%2C1%2C68
+https://maxim-saplin.github.io/cpdt_results/?ttl=Samsung%20Galaxy%20S8+vs.+Galaxy%20Note%208+Performance&selected=34%2C33%2C61
+https://maxim-saplin.github.io/cpdt_results/?ttl=Huawei%20P20+vs.+Huawei%20Mate%2020+Performance&selected=57%2C42
+
+
 https://maxim-saplin.github.io/cpdt_results/?selected=1
-https://maxim-saplin.github.io/cpdt_results/?selected=2
+
 https://maxim-saplin.github.io/cpdt_results/?selected=3
 https://maxim-saplin.github.io/cpdt_results/?selected=4
 https://maxim-saplin.github.io/cpdt_results/?selected=5
@@ -46,7 +58,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=38
 https://maxim-saplin.github.io/cpdt_results/?selected=39
 https://maxim-saplin.github.io/cpdt_results/?selected=40
 https://maxim-saplin.github.io/cpdt_results/?selected=41
-https://maxim-saplin.github.io/cpdt_results/?selected=42
+
 https://maxim-saplin.github.io/cpdt_results/?selected=43
 https://maxim-saplin.github.io/cpdt_results/?selected=44
 https://maxim-saplin.github.io/cpdt_results/?selected=45
@@ -56,26 +68,26 @@ https://maxim-saplin.github.io/cpdt_results/?selected=48
 https://maxim-saplin.github.io/cpdt_results/?selected=49
 https://maxim-saplin.github.io/cpdt_results/?selected=50
 https://maxim-saplin.github.io/cpdt_results/?selected=51
-https://maxim-saplin.github.io/cpdt_results/?selected=52
-https://maxim-saplin.github.io/cpdt_results/?selected=53
-https://maxim-saplin.github.io/cpdt_results/?selected=54
-https://maxim-saplin.github.io/cpdt_results/?selected=55
-https://maxim-saplin.github.io/cpdt_results/?selected=56
-https://maxim-saplin.github.io/cpdt_results/?selected=57
-https://maxim-saplin.github.io/cpdt_results/?selected=58
+
+
+
+
+
+
+
 https://maxim-saplin.github.io/cpdt_results/?selected=59
 https://maxim-saplin.github.io/cpdt_results/?selected=60
 https://maxim-saplin.github.io/cpdt_results/?selected=61
 https://maxim-saplin.github.io/cpdt_results/?selected=62
 https://maxim-saplin.github.io/cpdt_results/?selected=63
 https://maxim-saplin.github.io/cpdt_results/?selected=64
-https://maxim-saplin.github.io/cpdt_results/?selected=65
+https://maxim-saplin.github.io/cpdt_results/?selected=86
 https://maxim-saplin.github.io/cpdt_results/?selected=66
 https://maxim-saplin.github.io/cpdt_results/?selected=67
 https://maxim-saplin.github.io/cpdt_results/?selected=68
 https://maxim-saplin.github.io/cpdt_results/?selected=69
-https://maxim-saplin.github.io/cpdt_results/?selected=70
-https://maxim-saplin.github.io/cpdt_results/?selected=71
+
+
 https://maxim-saplin.github.io/cpdt_results/?selected=72
 https://maxim-saplin.github.io/cpdt_results/?selected=73
 https://maxim-saplin.github.io/cpdt_results/?selected=74
@@ -90,6 +102,16 @@ https://maxim-saplin.github.io/cpdt_results/?selected=82
 https://maxim-saplin.github.io/cpdt_results/?selected=83
 https://maxim-saplin.github.io/cpdt_results/?selected=84
 https://maxim-saplin.github.io/cpdt_results/?selected=85
+https://maxim-saplin.github.io/cpdt_results/?selected=86
+https://maxim-saplin.github.io/cpdt_results/?selected=87
+https://maxim-saplin.github.io/cpdt_results/?selected=88
+https://maxim-saplin.github.io/cpdt_results/?selected=89
+https://maxim-saplin.github.io/cpdt_results/?selected=90
+https://maxim-saplin.github.io/cpdt_results/?selected=91
+https://maxim-saplin.github.io/cpdt_results/?selected=92
+https://maxim-saplin.github.io/cpdt_results/?selected=93
+https://maxim-saplin.github.io/cpdt_results/?selected=94
+https://maxim-saplin.github.io/cpdt_results/?selected=95
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
 
@@ -142,7 +164,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=48&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=49&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=50&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=51&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?selected=52&lang=ru
+
 
 
 
@@ -155,7 +177,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=61&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=62&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=63&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=64&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?selected=65&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=86&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=66&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=67&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=68&lang=ru
@@ -176,14 +198,13 @@ https://maxim-saplin.github.io/cpdt_results/?selected=82&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=83&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=84&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=85&lang=ru
-
-https://maxim-saplin.github.io/cpdt_results/?ttl=NTFS+vs.+APFS+Performance+on+Mac+-+CPDT&selected=4%2C5
-https://maxim-saplin.github.io/cpdt_results/?ttl=Android+Full-disk+Encryption+Performance+-+CPDT&selected=32%2C1%2C38%2C39%2C35%2C36
-https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NTFS%20Performance:%20Tuxera%20vs.%20Paragon%20vs.%20ntfs-3g%20with%20OSXFUSE
-https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance
-https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT
-https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52
-https://maxim-saplin.github.io/cpdt_results/?selected=69%2C68&ttl=Xiaomi%20Mi%208%20vs.%20Pocophone%20F1%20Performance
-https://maxim-saplin.github.io/cpdt_results/?ttl=Xiaomi+Mi+8%20Lite+vs.+Mi%208%20SE%20vs.%20Mi%208+Performance&selected=67%2C1%2C68
-https://maxim-saplin.github.io/cpdt_results/?ttl=Samsung%20Galaxy%20S8+vs.+Galaxy%20Note%208+Performance&selected=34%2C33%2C61
-https://maxim-saplin.github.io/cpdt_results/?ttl=Huawei%20P20+vs.+Huawei%20Mate%2020+Performance&selected=57%2C42
+https://maxim-saplin.github.io/cpdt_results/?selected=86&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=87&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=88&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=89&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=90&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=91&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=92&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=93&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=94&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=95&lang=ru
