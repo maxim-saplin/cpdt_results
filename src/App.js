@@ -23,13 +23,17 @@ class App extends Component {
     this.macos = "macos";
 
     this.urlParams = new URLSearchParams(window.location.search ? window.location.search : "");
+    
     this.selectedIdsParam = "selected";
     this.aboutParam = "about";
     this.showDownloadParam = "download";
+    this.qParam = "q";
+    this.inappParam = "inapp";
 
     let selectedResultIds = this.getSelectedIdsFromParam()
-    let inAppPlatform = this.urlParams.get("inapp") ? this.urlParams.get("inapp").toLocaleLowerCase() : null;
+    let inAppPlatform = this.urlParams.get(this.inappParam) ? this.urlParams.get(this.inappParam).toLocaleLowerCase() : null;
     let selectedPlatforms = db.dictionaries.getPlatforms().map(p => p.key);
+    let q = this.urlParams.get(this.qParam) ? this.urlParams.get(this.qParam).toLocaleLowerCase() : null;
 
     ({ selectedPlatforms, selectedResultIds } = this.inAppAdjustments(inAppPlatform, selectedPlatforms, selectedResultIds));
 
@@ -38,7 +42,7 @@ class App extends Component {
       selectedResultIds: selectedResultIds,
       inAppPlatform: inAppPlatform,
       selectedPlatforms: selectedPlatforms,
-      device: "",
+      device: q,
       showAbout: this.urlParams.has(this.aboutParam),
       showDownload: this.urlParams.has(this.showDownloadParam)
     };
@@ -186,7 +190,7 @@ class App extends Component {
           items={db.dictionaries.getPlatforms()} selectAll={true} />
         <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
           items={db.dictionaries.getTests()} />
-        <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected}/>
+        <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected} value={this.state.device}/>
         <br/>
         <TestResults 
           selectedTest={this.state.selectedTest}

@@ -11,10 +11,11 @@ class Search extends PureComponent {
     this.moveCursorToEnd = this.moveCursorToEnd.bind(this);
 
     this.state = {
-      extraSpaces: true, 
+      extraSpaces: props.value ? false : true, 
       blink: false,
       showHitn: false
     };
+
     this.textInput = React.createRef();
   }
 
@@ -57,6 +58,11 @@ class Search extends PureComponent {
     }
   }
 
+  componentDidUpdate(){
+    if (document.activeElement === this.textInput.current) 
+      this.moveCursorToEnd(this.textInput.current);
+  }
+
   render() {
     return (
       <>      
@@ -69,6 +75,7 @@ class Search extends PureComponent {
             onFocus={(e) => {this.setState({blink:true}); this.moveCursorToEnd(e.nativeEvent.target)}} 
             onBlur={() => {this.setState({blink:false})}}
           >
+          {this.props.value}
           </span>
           <span 
             className={this.state.blink ? "blink" : ""} 

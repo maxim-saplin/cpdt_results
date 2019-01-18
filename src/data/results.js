@@ -28,7 +28,12 @@ const results =
 
     if (device){
       device = device.trim().toLowerCase();
-      if (device) filters.push(r => r.device.toLowerCase().includes(device));
+      if (device) {
+        if (device.length < 4)
+          filters.push(r => r.device.toLowerCase().includes(device));
+        else
+          filters.push(r => r.device.toLowerCase().includes(device) || r.deviceDetail.toLowerCase().includes(device));
+      }
     }
 
     if (excludeIds && excludeIds.length > 0){
