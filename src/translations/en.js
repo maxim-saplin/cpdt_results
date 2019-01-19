@@ -35,6 +35,7 @@ const translations =
 
     hitEnter: "Hit Enter & fix top result",
     hintDoubleTap: "Double tap to fix record at the top",
+    hintSwipe: "Swipe left or right to change test",
     close: "[C]lose",
     yourDevice: "Your device",
 

@@ -35,6 +35,7 @@ const translations =
 
     hitEnter: "Нажать Enter для закрепления записи",
     hintDoubleTap: "Нажать два раза для закрепления записи",
+    hintSwipe: "Свайп влево/вправо для смены теста",
     close: "[C] Закрыть",
     yourDevice: "Ваше устройство",
 

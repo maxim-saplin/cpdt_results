@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import ReactSwipeEvents from 'react-swipe-events';
-import l18n from './translations';
+import React, { Component } from 'react'
+import ReactSwipeEvents from 'react-swipe-events'
+import l18n from './translations'
 import PressableLink from './PressableLink'
 import ListSelector from './ListSelector'
 import Search from './Search'
 import TestResults from './TestResults'
+import Hint from './Hint'
 import AboutEn from './AboutEn'
 import AboutRu from './AboutRu'
-import db from './data';
+import db from './data'
 
 class App extends Component {
   constructor(props) {
@@ -112,7 +113,7 @@ class App extends Component {
   }
 
   testClick(key){
-    this.setState({selectedTest: key});
+    this.setState({selectedTest: key, swipeHint: true});
   }
 
   swipe(left){
@@ -128,7 +129,7 @@ class App extends Component {
     if (i < 0) i = t.length-1;
     else if (i >= t.length) i = 0;
     
-    this.setState({selectedTest: t[i].key});
+    this.setState({selectedTest: t[i].key, swipeHint: true});
   }
 
   platformClick(key){
@@ -221,6 +222,7 @@ class App extends Component {
             setTitle={stl}
           />        
         </div>
+        {'ontouchstart' in window && this.state.swipeHint && <Hint>{l18n.hintSwipe}</Hint>}
       </ReactSwipeEvents>
       : l18n.locale === l18n.ruLocale 
         ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/> 
