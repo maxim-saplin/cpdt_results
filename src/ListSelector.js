@@ -105,24 +105,16 @@ class ListSelector extends Component {
       return (
         <ul className={this.props.className}>
           {
-            Array.isArray(this.props.selectedKey) ?
               this.props.items.map( // multiselect
                 i =>
                   <li
                     key={i.key}
                     className={this.props.selectedKey.includes(i.key) ? "selected" : null}
-                    onClick={() => this.props.itemClick(this.toggle(i.key))}
-                  >
-                    {i.name}
-                  </li>
-              )
-              :
-              this.props.items.map( //single select
-                i =>
-                  <li
-                    key={i.key}
-                    className={this.props.selectedKey === i.key ? "selected" : null}
-                    onClick={() => this.props.itemClick(i.key)}
+                    onClick={
+                      Array.isArray(this.props.selectedKey) ? 
+                      () => this.props.itemClick(this.toggle(i.key)) : // multiselect
+                      () => this.props.itemClick(i.key) //single select
+                    }
                   >
                     {i.name}
                   </li>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactSwipeEvents from 'react-swipe-events';
 import l18n from './translations';
 import PressableLink from './PressableLink'
 import ListSelector from './ListSelector'
@@ -18,6 +19,7 @@ class App extends Component {
     this.resultSelected = this.resultSelected.bind(this);
     this.selectedIdRemoved = this.selectedIdRemoved.bind(this);
     this.toggleAbout = this.toggleAbout.bind(this);
+    this.swipe = this.swipe.bind(this);
     this.wpf = "wpf";
     this.android = "android";
     this.macos = "macos";
@@ -113,6 +115,22 @@ class App extends Component {
     this.setState({selectedTest: key});
   }
 
+  swipe(left){
+    let t = db.dictionaries.getTests();
+    let i = 0;
+
+    for (i; i < t.length; i++){
+      if (t[i].key === this.state.selectedTest) break;
+    }
+
+    if (left) i++; else i--;
+
+    if (i < 0) i = t.length-1;
+    else if (i >= t.length) i = 0;
+    
+    this.setState({selectedTest: t[i].key});
+  }
+
   platformClick(key){
     this.setState({selectedPlatforms: key});
   }
@@ -181,27 +199,29 @@ class App extends Component {
 
     return (
       !this.state.showAbout && !this.state.showDownload ?
-      <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
-        {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
-        {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
-        <PressableLink className={helpLinkClass} onClick={this.toggleAbout}>[?]</PressableLink>
-        
-        <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
-          items={db.dictionaries.getPlatforms()} selectAll={true} />
-        <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
-          items={db.dictionaries.getTests()} />
-        <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected} value={this.state.device}/>
-        <br/>
-        <TestResults 
-          selectedTest={this.state.selectedTest}
-          selectedPlatforms={this.state.selectedPlatforms}
-          selectedResultIds={this.state.selectedResultIds}
-          selectedIdRemoved={this.selectedIdRemoved}
-          resultSelected={this.resultSelected}
-          device={this.state.device}
-          setTitle={stl}
-        />
-      </div>
+      <ReactSwipeEvents onSwipedLeft={() => this.swipe(true)} onSwipedRight={() => this.swipe(false)} threshold="90">
+        <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
+          {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
+          {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
+          <PressableLink className={helpLinkClass} onClick={this.toggleAbout}>[?]</PressableLink>
+          
+          <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
+            items={db.dictionaries.getPlatforms()} selectAll={true} />
+          <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
+            items={db.dictionaries.getTests()} />
+          <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected} value={this.state.device}/>
+          <br/>
+          <TestResults 
+            selectedTest={this.state.selectedTest}
+            selectedPlatforms={this.state.selectedPlatforms}
+            selectedResultIds={this.state.selectedResultIds}
+            selectedIdRemoved={this.selectedIdRemoved}
+            resultSelected={this.resultSelected}
+            device={this.state.device}
+            setTitle={stl}
+          />        
+        </div>
+      </ReactSwipeEvents>
       : l18n.locale === l18n.ruLocale 
         ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/> 
         : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/>);
