@@ -26,6 +26,11 @@ https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20против
 https://maxim-saplin.github.io/cpdt_results/?selected=85%2C84%2C26&q=Snapdragon%20845&ttl=Exynos%209810%20vs%20Snapdragon%20845%20-%20Memory%20and%20Storgae%20Performance
 https://maxim-saplin.github.io/cpdt_results/?selected=85%2C84%2C26&q=Snapdragon%20845&ttl=Exynos%209810%20против%20Snapdragon%20845%20-%20Производительность%20памяти&lang=ru
 
+https://maxim-saplin.github.io/cpdt_results/?selected=4%2C96&ttl=MacBook%20Pro%202017%20vs.%202018%20SSD%20Performance
+https://maxim-saplin.github.io/cpdt_results/?selected=4%2C96&ttl=MacBook%20Pro%202017%20против%202018%20%20-%20скорость%20SSD&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro+13"+vs.+15"%20-%20SSD%20Performance&selected=96%2C25
+https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro:+13"+против+15"++-+скорость+SSD&lang=ru&selected=96%2C25
+
 https://maxim-saplin.github.io/cpdt_results/?selected=1
 
 https://maxim-saplin.github.io/cpdt_results/?selected=3
