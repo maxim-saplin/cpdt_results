@@ -129,6 +129,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=95
 https://maxim-saplin.github.io/cpdt_results/?selected=96
 https://maxim-saplin.github.io/cpdt_results/?selected=97
 https://maxim-saplin.github.io/cpdt_results/?selected=98
+https://maxim-saplin.github.io/cpdt_results/?selected=99
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
 
@@ -228,3 +229,4 @@ https://maxim-saplin.github.io/cpdt_results/?selected=95&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=96&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=97&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=98&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=99&lang=ru
