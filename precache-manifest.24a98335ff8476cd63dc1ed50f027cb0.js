@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
-    "revision": "9ec339fff0b06b9eb43b",
-    "url": "/cpdt_results/static/css/main.aabc6f3d.chunk.css"
+    "revision": "57a7332c4b5201f090d5",
+    "url": "/cpdt_results/static/css/main.60cfe6d9.chunk.css"
   },
   {
-    "revision": "9aa9a4f89a4c55827369",
-    "url": "/cpdt_results/static/js/1.9aa9a4f8.chunk.js"
+    "revision": "81221e4f1bff9b3b6307",
+    "url": "/cpdt_results/static/js/1.81221e4f.chunk.js"
   },
   {
     "revision": "95b7c02d66ede0201f4c",
@@ -44,20 +44,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
   },
   {
-    "revision": "9ec339fff0b06b9eb43b",
-    "url": "/cpdt_results/static/js/main.9ec339ff.chunk.js"
+    "revision": "57a7332c4b5201f090d5",
+    "url": "/cpdt_results/static/js/main.57a7332c.chunk.js"
   },
   {
     "revision": "036d007395279645d7dd332ac08e6c66",
     "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
-  },
-  {
-    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
-    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
-  },
-  {
-    "revision": "bd379b4108d626229acca4a4cf8f66b6",
-    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
     "revision": "5632af57e4d486d7597865250c6b1e77",
@@ -76,6 +68,14 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
   },
   {
+    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
+    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
+  },
+  {
+    "revision": "bd379b4108d626229acca4a4cf8f66b6",
+    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
+  },
+  {
     "revision": "47b2b792238f5cf6b4a26b91f1e65456",
     "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
   },
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "91e8e8643b6a99ca27db39a43591a546",
+    "revision": "90cd1fec489c7b12a13e9282d66c7d8d",
     "url": "/cpdt_results/index.html"
   }
 ];
