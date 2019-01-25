@@ -6,7 +6,7 @@ export default function About(props){
     return (
         <>
             {props.inApp && <br/>}
-            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack</PressableLink>
+            <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack to Chart</PressableLink>
             <br/>
             {!props.inApp &&
             <>
@@ -17,7 +17,7 @@ export default function About(props){
                 <br/><br/><br/><br/>
             </>}
 
-            <h1>How are the Results Obtained</h1>
+            <h1>How are the Chart Results Obtained</h1>
             <br/>
             <div className="text">
                 <p>
