@@ -1,35 +1,43 @@
 https://maxim-saplin.github.io/cpdt_results/
+https://maxim-saplin.github.io/cpdt_results/&lang=en
 https://maxim-saplin.github.io/cpdt_results/?lang=ru
 https://maxim-saplin.github.io/cpdt_results/?about=
+https://maxim-saplin.github.io/cpdt_results/?about=&lang=en
 https://maxim-saplin.github.io/cpdt_results/?about=&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?download=
+https://maxim-saplin.github.io/cpdt_results/?download=&lang=en
 https://maxim-saplin.github.io/cpdt_results/?download=&lang=ru
 
-https://maxim-saplin.github.io/cpdt_results/?ttl=NTFS+vs.+APFS+Performance+on+Mac+-+CPDT&selected=4%2C5
-https://maxim-saplin.github.io/cpdt_results/?ttl=Android+Full-disk+Encryption+Performance+-+CPDT&selected=32%2C1%2C38%2C39%2C35%2C36
-https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NTFS%20Performance:%20Tuxera%20vs.%20Paragon%20vs.%20ntfs-3g%20with%20OSXFUSE
-https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance
-https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT
-https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52
-https://maxim-saplin.github.io/cpdt_results/?selected=69%2C68&ttl=Xiaomi%20Mi%208%20vs.%20Pocophone%20F1%20Performance
-https://maxim-saplin.github.io/cpdt_results/?ttl=Xiaomi+Mi+8%20Lite+vs.+Mi%208%20SE%20vs.%20Mi%208+Performance&selected=67%2C1%2C68
-https://maxim-saplin.github.io/cpdt_results/?ttl=Samsung%20Galaxy%20S8+vs.+Galaxy%20Note%208+Performance&selected=34%2C33%2C61
-https://maxim-saplin.github.io/cpdt_results/?ttl=Huawei%20P20+vs.+Huawei%20Mate%2020+Performance&selected=57%2C42
-https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20845%20Smatrphones%27%20Storgae%20Performance&q=Snapdragon%20845
+https://maxim-saplin.github.io/cpdt_results/?ttl=NTFS+vs.+APFS+Performance+on+Mac+-+CPDT&selected=4%2C5&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=Android+Full-disk+Encryption+Performance+-+CPDT&selected=32%2C1%2C38%2C39%2C35%2C36&lang=en
+https://maxim-saplin.github.io/cpdt_results/?selected=43%2C5%2C44&ttl=macOS%20NTFS%20Performance:%20Tuxera%20vs.%20Paragon%20vs.%20ntfs-3g%20with%20OSXFUSE&lang=en
+https://maxim-saplin.github.io/cpdt_results/?selected=40%2C47&ttl=External%20HDD:%20USB%202.0%20vs%20USB%203.0%20performance&lang=en
+https://maxim-saplin.github.io/cpdt_results/?selected=21%2C22&ttl=Phone%20storage/memory%20performance%20degradation%20with%20decreased%20free%20space%20-%20CPDT&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=SSD+vs.+HDD+Performance+-+CPDT&selected=16%2C31%2C17%2C52&lang=en
+https://maxim-saplin.github.io/cpdt_results/?selected=69%2C68&ttl=Xiaomi%20Mi%208%20vs.%20Pocophone%20F1%20Performance&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=Xiaomi+Mi+8%20Lite+vs.+Mi%208%20SE%20vs.%20Mi%208+Performance&selected=67%2C1%2C68&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=Samsung%20Galaxy%20S8+vs.+Galaxy%20Note%208+Performance&selected=34%2C33%2C61&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=Huawei%20P20+vs.+Huawei%20Mate%2020+Performance&selected=57%2C42&lang=en
+https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20845%20Smatrphones%27%20Storgae%20Performance&q=Snapdragon%20845&lang=en
 
 https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20845%20-%20Производительность%20памяти&q=Snapdragon%20845&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20Smatrphones%27%20Storgae%20Performance&q=Snapdragon%20835
+https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20Smatrphones%27%20Storgae%20Performance&q=Snapdragon%20835&lang=en
 https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20-%20Производительность%20памяти&q=Snapdragon%20835&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20vs.%20845%20-%20Storage%20Performance&q=Snapdragon+835&selected=12%2C3%2C64%2C97
+https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20vs.%20845%20-%20Storage%20Performance&q=Snapdragon+835&selected=12%2C3%2C64%2C97&lang=en
 https://maxim-saplin.github.io/cpdt_results/?ttl=Snapdragon%20835%20против%20845%20-%20производительность%20памяти&q=Snapdragon+835&selected=12%2C3%2C64%2C97&lang=ru
 
-https://maxim-saplin.github.io/cpdt_results/?selected=85%2C84%2C26&q=Snapdragon%20845&ttl=Exynos%209810%20vs%20Snapdragon%20845%20-%20Memory%20and%20Storgae%20Performance
+https://maxim-saplin.github.io/cpdt_results/?selected=85%2C84%2C26&q=Snapdragon%20845&ttl=Exynos%209810%20vs%20Snapdragon%20845%20-%20Memory%20and%20Storgae%20Performance&lang=en
 https://maxim-saplin.github.io/cpdt_results/?selected=85%2C84%2C26&q=Snapdragon%20845&ttl=Exynos%209810%20против%20Snapdragon%20845%20-%20Производительность%20памяти&lang=ru
 
-https://maxim-saplin.github.io/cpdt_results/?selected=4%2C96&ttl=MacBook%20Pro%202017%20vs.%202018%20SSD%20Performance
+https://maxim-saplin.github.io/cpdt_results/?selected=4%2C96&ttl=MacBook%20Pro%202017%20vs.%202018%20SSD%20Performance&lang=en
 https://maxim-saplin.github.io/cpdt_results/?selected=4%2C96&ttl=MacBook%20Pro%202017%20против%202018%20%20-%20скорость%20SSD&lang=ru
-https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro+13"+vs.+15"%20-%20SSD%20Performance&selected=96%2C25
+https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro+13"+vs.+15"%20-%20SSD%20Performance&selected=96%2C25&lang=en
 https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro:+13"+против+15"++-+скорость+SSD&lang=ru&selected=96%2C25
+
+https://maxim-saplin.github.io/cpdt_results/?q=xiaomi%20mi%20mix&ttl=Xiaomi%20Mi%20Mix%203,%20Mix%202S,%202%20and%20Mix%20-%20Performance%20Comparison&lang=en
+https://maxim-saplin.github.io/cpdt_results/?q=xiaomi%20mi%20mix&ttl=Xiaomi%20Mi%20Mix%203,%20Mix%202S,%202%20and%20Mix%20-%20Сравнение%20производительност&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?q=galaxy%20s&ttl=Samsung%20Galaxy%20S5%20to%20S9:%20All%20Galaxy%20S%20Performance%20Compared&lang=en
+https://maxim-saplin.github.io/cpdt_results/?q=galaxy%20s&ttl=Samsung%20Galaxy%20S5%20-%20S9:%20Сравнение%20производительност%20и%20линейки%20Galaxy%20S&lang=ru
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1
 
