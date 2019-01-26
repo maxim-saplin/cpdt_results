@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
   },
   {
-    "revision": "37698cdd304ef06da08b86889e5593b5",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
-  },
-  {
     "revision": "70b59c39c9071242baa75908c9796d0e",
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
+  },
+  {
+    "revision": "37698cdd304ef06da08b86889e5593b5",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
   },
   {
     "revision": "97aeea180bd7d5694ecdb8998ea9d275",
