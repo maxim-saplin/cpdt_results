@@ -37,7 +37,7 @@ https://maxim-saplin.github.io/cpdt_results/?ttl=2017%20MacBook+Pro:+13"+про�
 https://maxim-saplin.github.io/cpdt_results/?q=xiaomi%20mi%20mix&ttl=Xiaomi%20Mi%20Mix%203,%20Mix%202S,%202%20and%20Mix%20-%20Performance%20Comparison&lang=en
 https://maxim-saplin.github.io/cpdt_results/?q=xiaomi%20mi%20mix&ttl=Xiaomi%20Mi%20Mix%203,%20Mix%202S,%202%20and%20Mix%20-%20Сравнение%20производительност&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?q=galaxy%20s&ttl=Samsung%20Galaxy%20S5%20to%20S9:%20All%20Galaxy%20S%20Performance%20Compared&lang=en
-https://maxim-saplin.github.io/cpdt_results/?q=galaxy%20s&ttl=Samsung%20Galaxy%20S5%20-%20S9:%20Сравнение%20производительност%20и%20линейки%20Galaxy%20S&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?q=galaxy%20s&ttl=Samsung%20Galaxy%20S5%20-%20S9:%20Сравнение%20производительности%20линейки%20Galaxy%20S&lang=ru
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1
 
