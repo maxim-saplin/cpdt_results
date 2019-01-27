@@ -146,7 +146,7 @@ https://maxim-saplin.github.io/cpdt_results/?selected=104
 https://maxim-saplin.github.io/cpdt_results/?selected=105
 
 
-hhttps://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
 
 https://maxim-saplin.github.io/cpdt_results/?selected=3&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=4&lang=ru
