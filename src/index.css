@@ -33,8 +33,13 @@ html {
   -ms-overflow-style: none;
 }
 
+#root > div{
+  height: 100%;
+}
+
 div.pad{
   padding-top: 20px;
+  height: 100%;
 }
 
 h1, h2{
