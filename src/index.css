@@ -33,7 +33,7 @@ html {
   -ms-overflow-style: none;
 }
 
-#root > div{
+#swipe{
   height: 100%;
 }
 

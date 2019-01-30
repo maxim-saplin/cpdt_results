@@ -200,7 +200,7 @@ class App extends Component {
 
     return (
       !this.state.showAbout && !this.state.showDownload ?
-      <ReactSwipeEvents onSwipedLeft={() => this.swipe(true)} onSwipedRight={() => this.swipe(false)} threshold="75">
+      <ReactSwipeEvents id="swipe" onSwipedLeft={() => this.swipe(true)} onSwipedRight={() => this.swipe(false)} threshold="75">
         <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
           {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
           {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
