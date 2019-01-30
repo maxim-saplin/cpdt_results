@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
-    "revision": "84bd6aefbed2d5180860",
+    "revision": "542da3e70c5513c9b60c",
     "url": "/cpdt_results/static/css/main.137e1e20.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
   },
   {
-    "revision": "84bd6aefbed2d5180860",
-    "url": "/cpdt_results/static/js/main.84bd6aef.chunk.js"
+    "revision": "542da3e70c5513c9b60c",
+    "url": "/cpdt_results/static/js/main.542da3e7.chunk.js"
   },
   {
     "revision": "036d007395279645d7dd332ac08e6c66",
@@ -60,31 +60,31 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
   },
   {
-    "revision": "97aeea180bd7d5694ecdb8998ea9d275",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
-  },
-  {
     "revision": "37698cdd304ef06da08b86889e5593b5",
     "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
   },
   {
-    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
-    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
+    "revision": "97aeea180bd7d5694ecdb8998ea9d275",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
   },
   {
     "revision": "bd379b4108d626229acca4a4cf8f66b6",
     "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
-    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
-    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
+    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
+    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
   },
   {
     "revision": "bebad3b9bf225cdecc7b9fe714f3b46d",
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "32a0d04e7fa13910ce83b7449c6e919b",
+    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
+    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
+  },
+  {
+    "revision": "60ddf4bdfb948f7329eaeb97d9e95cc0",
     "url": "/cpdt_results/index.html"
   }
 ];
