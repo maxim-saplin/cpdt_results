@@ -23,7 +23,7 @@ export default function DownloadLinks(props){
                 <img src={google_play}/><br/>
                 Android
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.3/com.Saplin.CPDT.apk" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.4/com.Saplin.CPDT.apk" 
             target="_blank">
                 <img src={apk}/>
                 <br/>.APK
