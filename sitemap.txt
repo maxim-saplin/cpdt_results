@@ -1,5 +1,5 @@
 https://maxim-saplin.github.io/cpdt_results/
-https://maxim-saplin.github.io/cpdt_results/&lang=en
+https://maxim-saplin.github.io/cpdt_results/?lang=en
 https://maxim-saplin.github.io/cpdt_results/?lang=ru
 https://maxim-saplin.github.io/cpdt_results/?about=
 https://maxim-saplin.github.io/cpdt_results/?about=&lang=en
