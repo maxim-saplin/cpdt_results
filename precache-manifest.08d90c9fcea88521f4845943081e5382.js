@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "6624977e05316ed6e27ee2a32738ab7e",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
+    "revision": "d55f91bf0056794f4d2ad74327011e67",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
   },
   {
-    "revision": "695d607fbcba20afa54e",
+    "revision": "ff13f1b65fc1c4318f80",
     "url": "/cpdt_results/static/css/main.81595c89.chunk.css"
   },
   {
@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/github.990c2b02.svg"
   },
   {
-    "revision": "d55f91bf0056794f4d2ad74327011e67",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
-  },
-  {
     "revision": "27a3afd6a029d53608f80f2ee809f614",
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
   },
   {
-    "revision": "695d607fbcba20afa54e",
-    "url": "/cpdt_results/static/js/main.695d607f.chunk.js"
+    "revision": "6624977e05316ed6e27ee2a32738ab7e",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
+  },
+  {
+    "revision": "ff13f1b65fc1c4318f80",
+    "url": "/cpdt_results/static/js/main.ff13f1b6.chunk.js"
   },
   {
     "revision": "036d007395279645d7dd332ac08e6c66",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
-    "revision": "5632af57e4d486d7597865250c6b1e77",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
-  },
-  {
     "revision": "70b59c39c9071242baa75908c9796d0e",
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
+  },
+  {
+    "revision": "5632af57e4d486d7597865250c6b1e77",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
   },
   {
     "revision": "37698cdd304ef06da08b86889e5593b5",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
   },
   {
-    "revision": "5f955c3cc3071c83f599034f2bed6dc1",
+    "revision": "d76422faef49bb5cb1f0baf680623e07",
     "url": "/cpdt_results/index.html"
   }
 ];
