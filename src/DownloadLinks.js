@@ -8,12 +8,12 @@ import github from './img/github.svg';
 export default function DownloadLinks(props){
     return (
         <>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.3/CPDT.exe" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.6/CPDT.exe" 
             target="_blank">
                 <img src={windows}/>
                 <br/>Windows
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.2/CPDT.app.zip" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.6/CPDT.app.zip" 
             target="_blank">
                 <img src={macOS}/>
                 <br/>macOS
@@ -23,7 +23,7 @@ export default function DownloadLinks(props){
                 <img src={google_play}/><br/>
                 Android
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.4/com.Saplin.CPDT.apk" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.0.6/com.Saplin.CPDT.apk" 
             target="_blank">
                 <img src={apk}/>
                 <br/>.APK
