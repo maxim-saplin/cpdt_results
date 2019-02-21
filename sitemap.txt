@@ -144,6 +144,19 @@ https://maxim-saplin.github.io/cpdt_results/?selected=102
 https://maxim-saplin.github.io/cpdt_results/?selected=103
 https://maxim-saplin.github.io/cpdt_results/?selected=104
 https://maxim-saplin.github.io/cpdt_results/?selected=105
+https://maxim-saplin.github.io/cpdt_results/?selected=106
+https://maxim-saplin.github.io/cpdt_results/?selected=107
+https://maxim-saplin.github.io/cpdt_results/?selected=108
+https://maxim-saplin.github.io/cpdt_results/?selected=109
+https://maxim-saplin.github.io/cpdt_results/?selected=110
+https://maxim-saplin.github.io/cpdt_results/?selected=111
+https://maxim-saplin.github.io/cpdt_results/?selected=112
+https://maxim-saplin.github.io/cpdt_results/?selected=113
+https://maxim-saplin.github.io/cpdt_results/?selected=114
+https://maxim-saplin.github.io/cpdt_results/?selected=115
+https://maxim-saplin.github.io/cpdt_results/?selected=116
+https://maxim-saplin.github.io/cpdt_results/?selected=117
+https://maxim-saplin.github.io/cpdt_results/?selected=118
 
 
 https://maxim-saplin.github.io/cpdt_results/?selected=1&lang=ru
@@ -251,3 +264,16 @@ https://maxim-saplin.github.io/cpdt_results/?selected=102&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=103&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=104&lang=ru
 https://maxim-saplin.github.io/cpdt_results/?selected=105&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=106&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=107&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=108&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=109&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=110&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=111&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=112&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=113&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=114&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=115&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=116&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=117&lang=ru
+https://maxim-saplin.github.io/cpdt_results/?selected=118&lang=ru
