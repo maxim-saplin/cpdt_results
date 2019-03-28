@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d55f91bf0056794f4d2ad74327011e67",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
+    "revision": "6624977e05316ed6e27ee2a32738ab7e",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
-    "revision": "ff13f1b65fc1c4318f80",
+    "revision": "055d82a4e07bcedf9956",
     "url": "/cpdt_results/static/css/main.81595c89.chunk.css"
   },
   {
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
   },
   {
-    "revision": "6624977e05316ed6e27ee2a32738ab7e",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
+    "revision": "d55f91bf0056794f4d2ad74327011e67",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
   },
   {
-    "revision": "ff13f1b65fc1c4318f80",
-    "url": "/cpdt_results/static/js/main.ff13f1b6.chunk.js"
+    "revision": "055d82a4e07bcedf9956",
+    "url": "/cpdt_results/static/js/main.055d82a4.chunk.js"
   },
   {
     "revision": "036d007395279645d7dd332ac08e6c66",
@@ -76,15 +76,15 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
   },
   {
-    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
-    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
-  },
-  {
     "revision": "bebad3b9bf225cdecc7b9fe714f3b46d",
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "d76422faef49bb5cb1f0baf680623e07",
+    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
+    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
+  },
+  {
+    "revision": "0a3440341938f3ba01550990e5cde260",
     "url": "/cpdt_results/index.html"
   }
 ];
