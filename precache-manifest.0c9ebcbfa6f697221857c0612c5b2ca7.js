@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d55f91bf0056794f4d2ad74327011e67",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
+    "revision": "6624977e05316ed6e27ee2a32738ab7e",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
-    "revision": "1477beecb8dcf8af0af2",
+    "revision": "1b094b3d7b926c9c40c8",
     "url": "/cpdt_results/static/css/main.81595c89.chunk.css"
   },
   {
@@ -36,28 +36,20 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/github.990c2b02.svg"
   },
   {
-    "revision": "6624977e05316ed6e27ee2a32738ab7e",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
-  },
-  {
     "revision": "27a3afd6a029d53608f80f2ee809f614",
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
   },
   {
-    "revision": "1477beecb8dcf8af0af2",
-    "url": "/cpdt_results/static/js/main.1477beec.chunk.js"
+    "revision": "d55f91bf0056794f4d2ad74327011e67",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
+  },
+  {
+    "revision": "1b094b3d7b926c9c40c8",
+    "url": "/cpdt_results/static/js/main.1b094b3d.chunk.js"
   },
   {
     "revision": "036d007395279645d7dd332ac08e6c66",
     "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
-  },
-  {
-    "revision": "bd379b4108d626229acca4a4cf8f66b6",
-    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
-  },
-  {
-    "revision": "5632af57e4d486d7597865250c6b1e77",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
   },
   {
     "revision": "dd31905cb4394b5965adae9cb2bfd25c",
@@ -66,6 +58,14 @@ self.__precacheManifest = [
   {
     "revision": "70b59c39c9071242baa75908c9796d0e",
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
+  },
+  {
+    "revision": "5632af57e4d486d7597865250c6b1e77",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
+  },
+  {
+    "revision": "bd379b4108d626229acca4a4cf8f66b6",
+    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
     "revision": "37698cdd304ef06da08b86889e5593b5",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "3947ab79015ce2226de645528dea1c39",
+    "revision": "087669df14784cc33f9b4ef5c8d524b1",
     "url": "/cpdt_results/index.html"
   }
 ];
