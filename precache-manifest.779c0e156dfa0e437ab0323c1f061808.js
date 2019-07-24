@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "6624977e05316ed6e27ee2a32738ab7e",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
+    "revision": "036d007395279645d7dd332ac08e6c66",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
   },
   {
     "revision": "87172aa9e2ffceef4ca6",
@@ -36,32 +36,20 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/github.990c2b02.svg"
   },
   {
-    "revision": "27a3afd6a029d53608f80f2ee809f614",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
-  },
-  {
     "revision": "d55f91bf0056794f4d2ad74327011e67",
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.d55f91bf.woff2"
+  },
+  {
+    "revision": "27a3afd6a029d53608f80f2ee809f614",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
   },
   {
     "revision": "87172aa9e2ffceef4ca6",
     "url": "/cpdt_results/static/js/main.87172aa9.chunk.js"
   },
   {
-    "revision": "036d007395279645d7dd332ac08e6c66",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
-  },
-  {
-    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
-    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
-  },
-  {
-    "revision": "bd379b4108d626229acca4a4cf8f66b6",
-    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
-  },
-  {
-    "revision": "97aeea180bd7d5694ecdb8998ea9d275",
-    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
+    "revision": "6624977e05316ed6e27ee2a32738ab7e",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
     "revision": "5632af57e4d486d7597865250c6b1e77",
@@ -72,8 +60,20 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
   },
   {
+    "revision": "97aeea180bd7d5694ecdb8998ea9d275",
+    "url": "/cpdt_results/static/media/IBMPlexMono-Italic.97aeea18.woff"
+  },
+  {
     "revision": "37698cdd304ef06da08b86889e5593b5",
     "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
+  },
+  {
+    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
+    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
+  },
+  {
+    "revision": "bd379b4108d626229acca4a4cf8f66b6",
+    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
     "revision": "47b2b792238f5cf6b4a26b91f1e65456",
