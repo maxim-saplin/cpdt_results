@@ -329,3 +329,15 @@ span.hint{
 @keyframes blink-animation {
   to { visibility: hidden; }
 }
+
+.downloadBox {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-style: dashed;
+  margin-bottom: 30px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 3px;
+}

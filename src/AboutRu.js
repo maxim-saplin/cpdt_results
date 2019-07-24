@@ -9,14 +9,14 @@ export default function About(props){
             <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B] Назад к списку</PressableLink>
             <br/>
             {!props.inApp &&
-            <>
+            <div class="downloadBox">
+                <h1>Скачать CPDT Бенчмарк</h1>
                 <br/><br/>
-                <h1>Скачать приложение CPDT</h1>
-                <br/><br/>
-                <DownloadLinks />
-                <br/><br/><br/><br/>
-            </>}
+                <DownloadLinks />    
+            </div>}
 
+            {!props.download &&
+            <> 
             <h1>Как получены результаты для списка</h1>
             <br/>
             <div className="text">
@@ -47,6 +47,8 @@ export default function About(props){
                 </p>
             </div>
             <br/>
+            </>}
+            
             <h1>Как работает приложение</h1>
             <br/>
             <div className="text">

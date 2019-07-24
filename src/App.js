@@ -225,8 +225,8 @@ class App extends Component {
         {'ontouchstart' in window && this.state.swipeHint && <Hint>{l18n.hintSwipe}</Hint>}
       </ReactSwipeEvents>
       : l18n.locale === l18n.ruLocale 
-        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/> 
-        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null}/>);
+        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
+        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/>);
   }
 }
 

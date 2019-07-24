@@ -9,13 +9,11 @@ export default function About(props){
             <PressableLink className={props.linkClass} onClick={props.toggleAbout}>[B]ack to Chart</PressableLink>
             <br/>
             {!props.inApp &&
-            <>
+            <div class="downloadBox">
+                <h1>Download CPDT Benchmark</h1>
                 <br/><br/>
-                <h1>Download CPDT App</h1>
-                <br/><br/>
-                <DownloadLinks />
-                <br/><br/><br/><br/>
-            </>}
+                <DownloadLinks />    
+            </div>}
 
             <h1>How are the Chart Results Obtained</h1>
             <br/>
