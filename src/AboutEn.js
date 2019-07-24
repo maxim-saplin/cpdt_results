@@ -15,6 +15,8 @@ export default function About(props){
                 <DownloadLinks />    
             </div>}
 
+            {!props.download &&
+            <> 
             <h1>How are the Chart Results Obtained</h1>
             <br/>
             <div className="text">
@@ -44,6 +46,7 @@ export default function About(props){
                 </p>
             </div>
             <br/>
+            </>}
             <h1>How does the App Work</h1>
             <br/>
             <div className="text">
