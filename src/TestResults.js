@@ -18,7 +18,7 @@ class TestResults extends Component {
     let tests = db.dictionaries.getTests();
 
     for (var i = 0; i < tests.length; i++) {
-      text += l18n[tests[i].key + "_f"] + ": " + result[tests[i].key] + " ";
+      text += l18n[tests[i].key + "_s"] + ": " + result[tests[i].key] + " ";
       text += tests[i].key === "memCopy" ? l18n.gbps : l18n.mbps;
       if (i !== tests.length - 1) text += "\x0A";
     }

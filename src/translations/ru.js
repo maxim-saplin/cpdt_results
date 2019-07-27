@@ -13,8 +13,8 @@ const translations =
 
     seqWrite_s: "[П]осл. запись",
     seqRead_s: "[П]осл. чтение",
-    randWrite_s: "[П]роизв. запись (4КБ)",
-    randRead_s: "[П]роизв. чтение (4КБ)",
+    randWrite_s: "[П]роизв. запись",
+    randRead_s: "[П]роизв. чтение",
     memCopy_s: "[К]оп. памяти",
 
     seqWrite_f: "Последовательная запись",

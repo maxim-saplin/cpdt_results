@@ -13,8 +13,8 @@ const translations =
 
     seqWrite_s: "[S]eq. write",
     seqRead_s: "[S]eq. read",
-    randWrite_s: "[R]and. write (4KB)",
-    randRead_s: "[R]and. read (4KB)",
+    randWrite_s: "[R]and. write",
+    randRead_s: "[R]and. read",
     memCopy_s: "[M]em. copy",
 
     seqWrite_f: "Sequential write",

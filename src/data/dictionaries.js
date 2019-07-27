@@ -21,10 +21,22 @@ function getEntities(items) {
     });
 }
 
+function getEntitiesWithL18nMod(items, mod) {
+  return items.map(i => {
+      let obj = {
+        key: i,
+        name: l18n[i+mod] ? l18n[i+mod] : i,
+        shortcut: null
+      };
+      addShortcut(obj);
+      return obj;
+    });
+}
+
 const dictionaries = 
 {
   getTests : function(){
-    if (!tests) tests = getEntities(this.data.tests);
+    if (!tests) tests = getEntitiesWithL18nMod(this.data.tests,"_s");
     return tests;
   },  
 
