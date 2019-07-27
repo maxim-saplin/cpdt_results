@@ -34,10 +34,11 @@ const dictionaries =
 
         let keys = platforms.map(p => p.key);
 
-        if (keys.length !== 3) console.log("Invalid number of platforms in DB, 3 supported, found "+keys.length);
+        if (keys.length !== 4) console.log("Invalid number of platforms in DB, 4 supported, found "+keys.length);
         if (!keys.includes(this.Windows)) console.log("Windows platfrom not found in DB");
         if (!keys.includes(this.Android)) console.log("Android platfrom not found in DB");
         if (!keys.includes(this.macOS)) console.log("macOS platfrom not found in DB");
+        if (!keys.includes(this.iOS)) console.log("iOS platfrom not found in DB");
       }
       return platforms;
   }
@@ -52,5 +53,6 @@ dictionaries.memCopy = "memCopy";
 dictionaries.Windows = "Windows";
 dictionaries.Android = "Android";
 dictionaries.macOS = "macOS";
+dictionaries.iOS = "iOS";
 
 export default dictionaries;

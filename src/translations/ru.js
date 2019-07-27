@@ -28,6 +28,7 @@ const translations =
 
     Android: "[A]ndroid",
     macOS: "mac[O]S",
+    iOS: "[i]OS",
     Windows: "[W]indows",
     all: "Все",
     mbps: "МБ/с",
