@@ -1,6 +1,6 @@
 {
   "short_name": "CPDT Results DB",
-  "name": "Cross Platform Disk Test: Results Database",
+  "name": "CPDT Benchmark: Results Database",
   "icons": [
     {
       "src": "favicon.ico",
