@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
   },
   {
-    "revision": "37698cdd304ef06da08b86889e5593b5",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
-  },
-  {
     "revision": "70b59c39c9071242baa75908c9796d0e",
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
+  },
+  {
+    "revision": "37698cdd304ef06da08b86889e5593b5",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
   },
   {
     "revision": "97aeea180bd7d5694ecdb8998ea9d275",
@@ -80,15 +80,15 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
   },
   {
-    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
-    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
-  },
-  {
     "revision": "bebad3b9bf225cdecc7b9fe714f3b46d",
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "80acba29bc73c65f64bbf3d20f3e5724",
+    "revision": "47b2b792238f5cf6b4a26b91f1e65456",
+    "url": "/cpdt_results/static/media/RuWhite.47b2b792.png"
+  },
+  {
+    "revision": "7fa774c0777f01c781bd539209e07095",
     "url": "/cpdt_results/index.html"
   }
 ];
