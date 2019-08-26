@@ -1,7 +1,7 @@
 {
-  "main.css": "/cpdt_results/static/css/main.ffd9f212.chunk.css",
-  "main.js": "/cpdt_results/static/js/main.6031c116.chunk.js",
-  "main.js.map": "/cpdt_results/static/js/main.6031c116.chunk.js.map",
+  "main.css": "/cpdt_results/static/css/main.90fdb45e.chunk.css",
+  "main.js": "/cpdt_results/static/js/main.00b4b557.chunk.js",
+  "main.js.map": "/cpdt_results/static/js/main.00b4b557.chunk.js.map",
   "static/js/1.70767366.chunk.js": "/cpdt_results/static/js/1.70767366.chunk.js",
   "static/js/1.70767366.chunk.js.map": "/cpdt_results/static/js/1.70767366.chunk.js.map",
   "runtime~main.js": "/cpdt_results/static/js/runtime~main.95b7c02d.js",
@@ -13,9 +13,9 @@
   "static/media/github.svg": "/cpdt_results/static/media/github.990c2b02.svg",
   "static/media/linux.svg": "/cpdt_results/static/media/linux.51ffa359.svg",
   "static/media/macos.svg": "/cpdt_results/static/media/macos.3a236d88.svg",
-  "static/media/index_dark.css": "/cpdt_results/static/media/EnWhite.bebad3b9.png",
-  "static/css/main.ffd9f212.chunk.css.map": "/cpdt_results/static/css/main.ffd9f212.chunk.css.map",
+  "static/media/index_dark.css": "/cpdt_results/static/media/RuWhite.47b2b792.png",
+  "static/css/main.90fdb45e.chunk.css.map": "/cpdt_results/static/css/main.90fdb45e.chunk.css.map",
   "index.html": "/cpdt_results/index.html",
-  "precache-manifest.a215700d18fab90c91d876ff5731e23f.js": "/cpdt_results/precache-manifest.a215700d18fab90c91d876ff5731e23f.js",
+  "precache-manifest.a01cb6e55c3eb9542f705e06234bd294.js": "/cpdt_results/precache-manifest.a01cb6e55c3eb9542f705e06234bd294.js",
   "service-worker.js": "/cpdt_results/service-worker.js"
 }
