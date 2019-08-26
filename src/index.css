@@ -344,3 +344,7 @@ span.hint{
   border-width: 3px;
   background-color: #a8a8a82b;
 }
+
+.downloadBox a {
+  padding-top: 10px;
+}
