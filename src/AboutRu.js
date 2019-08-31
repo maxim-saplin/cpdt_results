@@ -11,7 +11,7 @@ export default function About(props){
             {!props.inApp &&
             <div class="downloadBox">
                 <h1>Скачать CPDT Бенчмарк</h1>
-                <br/><br/>
+                <br/>
                 <DownloadLinks />    
             </div>}
 
