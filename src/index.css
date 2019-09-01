@@ -318,6 +318,10 @@ span.centerColumn .ttl, span.centerColumn .res{
   font-size: 14px;
 }
 
+span.centerColumn br.unitBreak{
+  display: none;
+}
+
 span.centerColumn .unit{
   font-size: 9px;
 }
@@ -325,13 +329,31 @@ span.centerColumn .unit{
 /* Overdide for mobile, expanded results*/
 @media (max-width: 444px)
 {
+  /* span.centerColumn{
+    line-height: 14px;
+  } */
+  
   span.centerColumn .ttl, span.centerColumn .res{
     font-size: 12px;
   }
 
+  span.centerColumn .unit{
+    position: relative;
+    top: -4px;
+  }
+
   span.centerColumn .singleRes {
     width: 59px;
-    padding: 2px;
+    margin: 1px 1px 0px 1px;
+    padding: 2px 2px 0px 2px;
+    line-height: 14px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000;
+  }
+
+  span.centerColumn br.unitBreak{
+    display: inline;
   }
 }
 

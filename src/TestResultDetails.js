@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import TestResultDetailsItem from './TestResultDetailsItem';
 import l18n from './translations';
 import db from './data';
 
@@ -9,40 +10,45 @@ class TestResultDetails extends PureComponent {
     if (i) return (
       <span className={this.props.noHighlight ? "centerColumn noHighlight" : "centerColumn"}>
 
-        <span className={this.props.selectedTest === db.dictionaries.seqWrite ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_SW}</span>
-          <br/>
-          <span className="res">{i[db.dictionaries.seqWrite]}</span>
-          <span className="unit">{l18n.mbps}</span>
-        </span>
+        <TestResultDetailsItem 
+          selectedTest={this.props.selectedTest}
+          test={db.dictionaries.seqWrite}
+          testName={l18n.result_SW}
+          unit={l18n.mbps}
+          result={i[db.dictionaries.seqWrite]}
+        />
 
-        <span className={this.props.selectedTest === db.dictionaries.seqRead ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_SR}</span>
-          <br/>
-          <span className="res">{i[db.dictionaries.seqRead]}</span>
-          <span className="unit">{l18n.mbps}</span>
-        </span>
+        <TestResultDetailsItem 
+          selectedTest={this.props.selectedTest}
+          test={db.dictionaries.seqRead}
+          testName={l18n.result_SR}
+          unit={l18n.mbps}
+          result={i[db.dictionaries.seqRead]}
+        />
+
+        <TestResultDetailsItem 
+          selectedTest={this.props.selectedTest}
+          test={db.dictionaries.randWrite}
+          testName={l18n.result_RW}
+          unit={l18n.mbps}
+          result={i[db.dictionaries.randWrite]}
+        />
+
+        <TestResultDetailsItem 
+          selectedTest={this.props.selectedTest}
+          test={db.dictionaries.randRead}
+          testName={l18n.result_RR}
+          unit={l18n.mbps}
+          result={i[db.dictionaries.randRead]}
+        />        
         
-        <span className={this.props.selectedTest === db.dictionaries.randWrite ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_RW}</span>
-          <br/>
-          <span className="res">{i[db.dictionaries.randWrite]}</span>
-          <span className="unit">{l18n.mbps}</span>
-        </span>
-
-        <span className={this.props.selectedTest === db.dictionaries.randRead ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_RR}</span>
-          <br/>
-          <span className="res">{i[db.dictionaries.randRead]}</span>
-          <span className="unit">{l18n.mbps}</span>
-        </span>
-
-        <span className={this.props.selectedTest === db.dictionaries.memCopy ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_MEM}</span>
-          <br/>
-          <span className="res">{i[db.dictionaries.memCopy]}</span>
-          <span className="unit">{l18n.gbps}</span>
-        </span>
+        <TestResultDetailsItem 
+          selectedTest={this.props.selectedTest}
+          test={db.dictionaries.memCopy}
+          testName={l18n.result_MEM}
+          unit={l18n.gbps}
+          result={i[db.dictionaries.memCopy]}
+        /> 
 
       </span>);
 

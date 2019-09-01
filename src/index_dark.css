@@ -44,6 +44,14 @@ body.dark span.centerColumn .ttl{
   color: #808080;
 }
 
+/* Overdide for mobile, expanded results*/
+@media (max-width: 444px)
+{
+  body.dark span.centerColumn .singleRes {
+    border-top-color: #fff;
+  }
+}
+
 body.dark span.hint{
   background-color: #A8A8A8;
   animation: fade-in-out-dark 4.5s 0.5s forwards ease;
