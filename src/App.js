@@ -200,29 +200,31 @@ class App extends Component {
 
     return (
       !this.state.showAbout && !this.state.showDownload ?
-      <ReactSwipeEvents id="swipe" onSwipedLeft={() => this.swipe(true)} onSwipedRight={() => this.swipe(false)} threshold="75">
-        <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
-          {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
-          {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
-          <PressableLink className={helpLinkClass} onClick={this.toggleAbout}>[?]</PressableLink>
-          
-          <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
-            items={db.dictionaries.getPlatforms()} selectAll={true} />
-          <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
-            items={db.dictionaries.getTests()} />
-          <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected} value={this.state.device}/>
-          <br/>
-          <TestResults 
-            selectedTest={this.state.selectedTest}
-            selectedPlatforms={this.state.selectedPlatforms}
-            selectedResultIds={this.state.selectedResultIds}
-            selectedIdRemoved={this.selectedIdRemoved}
-            resultSelected={this.resultSelected}
-            device={this.state.device}
-            setTitle={stl}
-          />        
-        </div>
-        {'ontouchstart' in window && this.state.swipeHint && <Hint>{l18n.hintSwipe}</Hint>}
+      <ReactSwipeEvents id="swipe" onSwipedLeft={() => this.swipe(true)} onSwipedRight={() => this.swipe(false)} threshold={75}>
+        <>
+          <div className={this.state.inAppPlatform !== this.wpf ? "pad" : null}>
+            {!this.state.inAppPlatform && <h1>{l18n.title}: </h1>}
+            {!this.state.inAppPlatform && <h2>{l18n.subTitle}</h2>}
+            <PressableLink className={helpLinkClass} onClick={this.toggleAbout}>[?]</PressableLink>
+            
+            <ListSelector itemClick={this.platformClick} selectedKey={this.state.selectedPlatforms} 
+              items={db.dictionaries.getPlatforms()} selectAll={true} />
+            <ListSelector itemClick={this.testClick} selectedKey={this.state.selectedTest} 
+              items={db.dictionaries.getTests()} />
+            <Search searchChanged={this.searchChanged} enterPressed={this.resultSelected} value={this.state.device}/>
+            <br/>
+            <TestResults 
+              selectedTest={this.state.selectedTest}
+              selectedPlatforms={this.state.selectedPlatforms}
+              selectedResultIds={this.state.selectedResultIds}
+              selectedIdRemoved={this.selectedIdRemoved}
+              resultSelected={this.resultSelected}
+              device={this.state.device}
+              setTitle={stl}
+            />        
+          </div>
+          {'ontouchstart' in window && this.state.swipeHint && <Hint>{l18n.hintSwipe}</Hint>}
+        </>
       </ReactSwipeEvents>
       : l18n.locale === l18n.ruLocale 
         ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 

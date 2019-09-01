@@ -12,6 +12,7 @@ class TestResults extends Component {
     this.onKeyUp = this.onKeyUp.bind(this);
     this.handleSingleDblClicks = this.handleSingleDblClicks.bind(this);
     this.state = {expandedId: null, doubleTapHint: false};
+    this.clickTimeout = null;
   }
 
   getAllResults(result) {
@@ -28,25 +29,28 @@ class TestResults extends Component {
   }
 
   componentWillUnmount(){
-    if (this.keyPressSubscribed)
+    if (this.keyPressSubscribed){
       document.removeEventListener('keyup', this.onKeyUp);
-
-      this.clickTimeout = null
+    }
   }
 
   handleSingleDblClicks(e, singleClick, dblClick){
     e.preventDefault();
     if (this.clickTimeout !== null) {
+      console.log("Dbl");
       clearTimeout(this.clickTimeout)
       this.clickTimeout = null;
       if (dblClick) dblClick();
     } 
     else {
-      this.clickTimeout = setTimeout(()=>{
+      console.log("Sngl");
       if (singleClick) singleClick();
-      clearTimeout(this.clickTimeout)
-        this.clickTimeout = null
-      }, 300)
+      this.clickTimeout = setTimeout(
+        ()=>{
+              clearTimeout(this.clickTimeout)
+              this.clickTimeout = null
+            },
+        300);
     }
   }
 

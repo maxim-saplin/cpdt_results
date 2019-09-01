@@ -8,7 +8,7 @@ class TestResultDetailsItem extends PureComponent {
       <span className="ttl">{this.props.testName}</span>
       <br/>
       <span className="res">{this.props.result}</span>
-      <br class="unitBreak"/>
+      <br className="unitBreak"/>
       <span className="unit">{this.props.unit}</span>
       </span>
     </>);
