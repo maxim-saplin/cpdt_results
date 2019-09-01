@@ -43,6 +43,11 @@ const translations =
     result_SRW: "Посл.З÷Ч",
     result_RRW: "Прзв.З÷Ч",
     result_MEM: "Коп.пам",
+
+    result_SW: "Посл.З",
+    result_SR: "Посл.Ч",
+    result_RW: "Прзв.З",
+    result_RR: "Прзв.Ч"
 }
 
 export default translations;

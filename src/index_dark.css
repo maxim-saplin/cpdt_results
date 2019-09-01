@@ -28,13 +28,17 @@ body.dark span.leftColumn .greyed {
 }
 
 body.dark div.item.selected{
-  background-color: #141414;
+    border-left-color: #E4E4E4;
+    background-color: #141414;
 }
 
 body.dark span.centerColumn {
-  background-color: #1B1B1B;
   color: #CCCCCC;
 }
+
+body.dark span.centerColumn .singleRes.selected {
+  background-color: #222222;
+ }
 
 body.dark span.centerColumn .ttl{
   color: #808080;

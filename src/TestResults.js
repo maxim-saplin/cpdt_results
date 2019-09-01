@@ -10,6 +10,7 @@ class TestResults extends Component {
     super(props);
 
     this.onKeyUp = this.onKeyUp.bind(this);
+    this.handleSingleDblClicks = this.handleSingleDblClicks.bind(this);
     this.state = {expandedId: null, doubleTapHint: false};
   }
 
@@ -29,6 +30,24 @@ class TestResults extends Component {
   componentWillUnmount(){
     if (this.keyPressSubscribed)
       document.removeEventListener('keyup', this.onKeyUp);
+
+      this.clickTimeout = null
+  }
+
+  handleSingleDblClicks(e, singleClick, dblClick){
+    e.preventDefault();
+    if (this.clickTimeout !== null) {
+      clearTimeout(this.clickTimeout)
+      this.clickTimeout = null;
+      if (dblClick) dblClick();
+    } 
+    else {
+      this.clickTimeout = setTimeout(()=>{
+      if (singleClick) singleClick();
+      clearTimeout(this.clickTimeout)
+        this.clickTimeout = null
+      }, 300)
+    }
   }
 
   onKeyUp(e){
@@ -49,7 +68,6 @@ class TestResults extends Component {
   }
 
   render() {
-   
     let items = db.results.getResults(this.props.selectedPlatforms, this.props.selectedTest, this.props.device, this.props.selectedResultIds);
     let selectedCount = -1;
     this.deletableId = null;
@@ -86,23 +104,45 @@ class TestResults extends Component {
             className={selectedCount-- > 0 ? "item selected" : (expandedId === i.id) ? "item highlight" : "item"} 
             id={selectedCount === 0 ? "last" : null}
             title={this.getAllResults(i)}
+            // onDoubleClick={
+            //   (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+            //   (e) => {
+            //     let selection = window.getSelection();
+            //     if (selection.empty) selection.empty(); 
+            //     this.props.resultSelected(i.id); 
+            //     if (expandedId === i.id) this.setState({expandedId: null});
+            //   }
+            //   : null
+            // }
             onClick={
-              (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
-              () => {
-                this.setState({expandedId: expandedId === i.id ? null : i.id});
-                if (!this.state.doubleTapHint) this.setState({doubleTapHint:true});
+              (e) =>
+              {
+                this.handleSingleDblClicks(
+                  e,
+                  //single click
+                  (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+                  () => {
+                    this.setState({expandedId: expandedId === i.id ? null : i.id});
+                    if (!this.state.doubleTapHint) this.setState({doubleTapHint:true});
+                  }
+                  : null,
+                  //dbl click
+                  (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+                  (e) => {
+                    let selection = window.getSelection();
+                    if (selection.empty) selection.empty(); 
+                    this.props.resultSelected(i.id); 
+                    if (expandedId === i.id) this.setState({expandedId: null});
+                  }
+                  : null
+                );
               }
-              : null
-            }
-            onDoubleClick={
-              (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
-              (e) => {
-                let selection = window.getSelection();
-                if (selection.empty) selection.empty(); 
-                this.props.resultSelected(i.id); 
-                if (expandedId === i.id) this.setState({expandedId: null});
-              }
-              : null
+              // (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
+              // () => {
+              //   this.setState({expandedId: expandedId === i.id ? null : i.id});
+              //   if (!this.state.doubleTapHint) this.setState({doubleTapHint:true});
+              // }
+              // : null
             }
           >
             <TestResult

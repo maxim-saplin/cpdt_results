@@ -35,11 +35,15 @@ html {
 
 #swipe{
   height: 100%;
+  widows: 100%;
 }
 
 div.pad{
   padding-top: 20px;
   height: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2{
@@ -232,7 +236,14 @@ div.item em {
 }
 
 div.item.selected{
+  border-left-color: #000;
   background-color: #E4E4E4;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+div.item.selected:nth-child(odd){
+  border-left-style: dashed; 
 }
 
 div#last.item.selected{
@@ -275,37 +286,53 @@ span.rightColumn span{
 }
 
 .selected span.rightColumn span {
-  background-color: #585858;
   text-shadow: 2px 2px #585858;
 }
 
 span.centerColumn {
   width: 100%;
-  background-color: #F0F0F0;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-top: 3px;
   color: black;
+}
+
+span.centerColumn span{
+  text-align: left;
 }
 
 span.centerColumn.noHighlight {
   background-color: transparent !important;
 }
 
-span.centerColumn .ttl{
-  color: #606060;
+span.centerColumn .singleRes {
+  width: 75px;
+  display: inline-block;
+  padding: 5px;
+}
+
+span.centerColumn .singleRes.selected {
+ background-color: #EEEEEE;
+}
+
+span.centerColumn .ttl, span.centerColumn .res{
   font-size: 14px;
 }
 
-span.centerColumn .res{
-  font-size: 15px;
-}
-
-span.centerColumn .res em{
-  text-decoration: underline;
-}
-
 span.centerColumn .unit{
-  font-size: 12px;
+  font-size: 9px;
+}
+
+/* Overdide for mobile, expanded results*/
+@media (max-width: 420px)
+{
+  span.centerColumn .ttl, span.centerColumn .res{
+    font-size: 12px;
+  }
+
+  span.centerColumn .singleRes {
+    width: 59px;
+    padding: 2px;
+  }
 }
 
 span.hint{

@@ -43,6 +43,11 @@ const translations =
     result_SRW: "Seq.W÷R",
     result_RRW: "Rnd.W÷R",
     result_MEM: "Mem.cpy",
+
+    result_SW: "Seq.W",
+    result_SR: "Seq.R",
+    result_RW: "Rnd.W",
+    result_RR: "Rnd.R"
 }
 
 export default translations;
