@@ -42,7 +42,7 @@ const translations =
 
     result_SRW: "Посл.З÷Ч",
     result_RRW: "Прзв.З÷Ч",
-    result_MEM: "Коп.пам",
+    result_MEM: "Коп.Пм",
 
     result_SW: "Посл.З",
     result_SR: "Посл.Ч",

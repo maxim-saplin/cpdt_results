@@ -38,7 +38,7 @@ class TestResultDetails extends PureComponent {
         </span>
 
         <span className={this.props.selectedTest === db.dictionaries.memCopy ? "singleRes selected" : "singleRes"}>
-          <span className="ttl">{l18n.result_RR}</span>
+          <span className="ttl">{l18n.result_MEM}</span>
           <br/>
           <span className="res">{i[db.dictionaries.memCopy]}</span>
           <span className="unit">{l18n.gbps}</span>

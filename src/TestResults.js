@@ -104,16 +104,6 @@ class TestResults extends Component {
             className={selectedCount-- > 0 ? "item selected" : (expandedId === i.id) ? "item highlight" : "item"} 
             id={selectedCount === 0 ? "last" : null}
             title={this.getAllResults(i)}
-            // onDoubleClick={
-            //   (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
-            //   (e) => {
-            //     let selection = window.getSelection();
-            //     if (selection.empty) selection.empty(); 
-            //     this.props.resultSelected(i.id); 
-            //     if (expandedId === i.id) this.setState({expandedId: null});
-            //   }
-            //   : null
-            // }
             onClick={
               (e) =>
               {
@@ -137,12 +127,6 @@ class TestResults extends Component {
                   : null
                 );
               }
-              // (!selectedResultIds || selectedResultIds.length === 0 || !selectedResultIds.includes(i.id)) ?
-              // () => {
-              //   this.setState({expandedId: expandedId === i.id ? null : i.id});
-              //   if (!this.state.doubleTapHint) this.setState({doubleTapHint:true});
-              // }
-              // : null
             }
           >
             <TestResult

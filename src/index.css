@@ -323,7 +323,7 @@ span.centerColumn .unit{
 }
 
 /* Overdide for mobile, expanded results*/
-@media (max-width: 420px)
+@media (max-width: 444px)
 {
   span.centerColumn .ttl, span.centerColumn .res{
     font-size: 12px;

@@ -42,7 +42,7 @@ const translations =
 
     result_SRW: "Seq.W÷R",
     result_RRW: "Rnd.W÷R",
-    result_MEM: "Mem.cpy",
+    result_MEM: "Mem.C",
 
     result_SW: "Seq.W",
     result_SR: "Seq.R",
