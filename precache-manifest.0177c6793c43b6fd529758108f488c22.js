@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.6624977e.woff2"
   },
   {
-    "revision": "5c7d8d991be427f8b0e1",
+    "revision": "f2a368226480fdc4ee0a",
     "url": "/cpdt_results/static/css/main.c9728813.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.27a3afd6.woff2"
   },
   {
-    "revision": "5c7d8d991be427f8b0e1",
-    "url": "/cpdt_results/static/js/main.5c7d8d99.chunk.js"
+    "revision": "f2a368226480fdc4ee0a",
+    "url": "/cpdt_results/static/js/main.f2a36822.chunk.js"
   },
   {
     "revision": "d55f91bf0056794f4d2ad74327011e67",
@@ -56,16 +56,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Italic.036d0073.woff2"
   },
   {
-    "revision": "bd379b4108d626229acca4a4cf8f66b6",
-    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
-  },
-  {
     "revision": "5632af57e4d486d7597865250c6b1e77",
     "url": "/cpdt_results/static/media/IBMPlexMono-Regular.5632af57.woff"
   },
   {
-    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
-    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
+    "revision": "37698cdd304ef06da08b86889e5593b5",
+    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
   },
   {
     "revision": "97aeea180bd7d5694ecdb8998ea9d275",
@@ -76,8 +72,12 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/IBMPlexMono-Medium.70b59c39.woff"
   },
   {
-    "revision": "37698cdd304ef06da08b86889e5593b5",
-    "url": "/cpdt_results/static/media/IBMPlexMono-SemiBold.37698cdd.woff"
+    "revision": "dd31905cb4394b5965adae9cb2bfd25c",
+    "url": "/cpdt_results/static/media/EnBlack.dd31905c.png"
+  },
+  {
+    "revision": "bd379b4108d626229acca4a4cf8f66b6",
+    "url": "/cpdt_results/static/media/RuBlack.bd379b41.png"
   },
   {
     "revision": "47b2b792238f5cf6b4a26b91f1e65456",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/cpdt_results/static/media/EnWhite.bebad3b9.png"
   },
   {
-    "revision": "ad01c89ec1f71a0d1fa50644b6cdcdf6",
+    "revision": "1d06f6aa7ab582269a2a4caa81173132",
     "url": "/cpdt_results/index.html"
   }
 ];
