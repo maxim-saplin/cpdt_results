@@ -8,6 +8,7 @@ import TestResults from './TestResults'
 import Hint from './Hint'
 import AboutEn from './AboutEn'
 import AboutRu from './AboutRu'
+import AboutFr from './AboutFr'
 import db from './data'
 
 class App extends Component {
@@ -228,7 +229,9 @@ class App extends Component {
       </ReactSwipeEvents>
       : l18n.locale === l18n.ruLocale 
         ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
-        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/>);
+        : (l18n.locale === l18n.frLocale 
+          ? <AboutFr toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
+          : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/>));
   }
 }
 
