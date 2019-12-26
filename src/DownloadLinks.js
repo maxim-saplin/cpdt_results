@@ -9,7 +9,7 @@ import linux from './img/linux.svg';
 export default function DownloadLinks(props){
     return (
         <>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.2.7/CPDT.exe.zip" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.0/CPDT.exe.zip" 
             target="_blank">
                 <img src={windows}/>
                 <br/>Windows
@@ -24,7 +24,7 @@ export default function DownloadLinks(props){
                 <img src={google_play}/><br/>
                 Android
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.2.9AM/com.Saplin.CPDT.apk" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.0/com.Saplin.CPDT.apk" 
             target="_blank">
                 <img src={apk}/>
                 <br/>.APK
