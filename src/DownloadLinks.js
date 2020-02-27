@@ -14,7 +14,7 @@ export default function DownloadLinks(props){
                 <img src={windows}/>
                 <br/>Windows
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.2.9AM/CPDT.app.zip" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.3/CPDT.app.zip" 
             target="_blank">
                 <img src={macOS}/>
                 <br/>macOS
@@ -24,7 +24,7 @@ export default function DownloadLinks(props){
                 <img src={google_play}/><br/>
                 Android
             </a>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.0/com.Saplin.CPDT.apk" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.1/com.Saplin.CPDT.apk" 
             target="_blank">
                 <img src={apk}/>
                 <br/>.APK
