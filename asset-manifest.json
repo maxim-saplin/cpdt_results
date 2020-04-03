@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/cpdt_results/static/css/main.a2ddb69e.chunk.css",
-    "main.js": "/cpdt_results/static/js/main.39b3d588.chunk.js",
-    "main.js.map": "/cpdt_results/static/js/main.39b3d588.chunk.js.map",
-    "runtime~main.js": "/cpdt_results/static/js/runtime~main.2000db57.js",
-    "runtime~main.js.map": "/cpdt_results/static/js/runtime~main.2000db57.js.map",
-    "static/js/2.ba98dec6.chunk.js": "/cpdt_results/static/js/2.ba98dec6.chunk.js",
-    "static/js/2.ba98dec6.chunk.js.map": "/cpdt_results/static/js/2.ba98dec6.chunk.js.map",
+    "main.css": "/cpdt_results/static/css/main.c5e2e9df.chunk.css",
+    "main.js": "/cpdt_results/static/js/main.51ec0bf9.chunk.js",
+    "main.js.map": "/cpdt_results/static/js/main.51ec0bf9.chunk.js.map",
+    "runtime-main.js": "/cpdt_results/static/js/runtime-main.c1619d6f.js",
+    "runtime-main.js.map": "/cpdt_results/static/js/runtime-main.c1619d6f.js.map",
+    "static/js/2.506ffdca.chunk.js": "/cpdt_results/static/js/2.506ffdca.chunk.js",
+    "static/js/2.506ffdca.chunk.js.map": "/cpdt_results/static/js/2.506ffdca.chunk.js.map",
     "index.html": "/cpdt_results/index.html",
-    "precache-manifest.31c9ff71f15cd49bd446e4b063dfcadd.js": "/cpdt_results/precache-manifest.31c9ff71f15cd49bd446e4b063dfcadd.js",
+    "precache-manifest.08da4b2526ef4c29d413cd73526165ae.js": "/cpdt_results/precache-manifest.08da4b2526ef4c29d413cd73526165ae.js",
     "service-worker.js": "/cpdt_results/service-worker.js",
-    "static/css/main.a2ddb69e.chunk.css.map": "/cpdt_results/static/css/main.a2ddb69e.chunk.css.map",
+    "static/css/main.c5e2e9df.chunk.css.map": "/cpdt_results/static/css/main.c5e2e9df.chunk.css.map",
+    "static/js/2.506ffdca.chunk.js.LICENSE.txt": "/cpdt_results/static/js/2.506ffdca.chunk.js.LICENSE.txt",
     "static/media/index.css": "/cpdt_results/static/media/RuBlack.bd379b41.png",
     "static/media/index_dark.css": "/cpdt_results/static/media/RuWhite.47b2b792.png",
     "static/media/apk.svg": "/cpdt_results/static/media/apk.a00fa3a4.svg",
@@ -19,5 +20,11 @@
     "static/media/linux.svg": "/cpdt_results/static/media/linux.51ffa359.svg",
     "static/media/macos.svg": "/cpdt_results/static/media/macos.3a236d88.svg",
     "static/media/windows.svg": "/cpdt_results/static/media/windows.15e72531.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1619d6f.js",
+    "static/js/2.506ffdca.chunk.js",
+    "static/css/main.c5e2e9df.chunk.css",
+    "static/js/main.51ec0bf9.chunk.js"
+  ]
 }
