@@ -9,7 +9,7 @@ import linux from './img/linux.svg';
 export default function DownloadLinks(props){
     return (
         <>
-            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.3.0/CPDT.exe.zip" 
+            <a href="https://github.com/maxim-saplin/CrossPlatformDiskTest/releases/download/2.2.3WPF/CPDT.zip" 
             target="_blank">
                 <img src={windows}/>
                 <br/>Windows
