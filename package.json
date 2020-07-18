@@ -5,7 +5,7 @@
   "homepage": "http://maxim-saplin.github.io/cpdt_results",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
