@@ -5,13 +5,13 @@
   "homepage": "http://maxim-saplin.github.io/cpdt_results",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "react-swipe-events": "^1.0.3",
     "url-search-params-polyfill": "^5.0.0",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
