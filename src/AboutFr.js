@@ -53,7 +53,7 @@ export default function About(props){
                 <p>
                 Cette application utilise l’interface standard API du système d'exploitation (WinAPI pour Windows, POSIX pour Mac et NDK pour Android) pour mesurer la vitesse de transfert des données (mégaoctets / gigaoctets par seconde) entre le périphérique de stockage (HDD, SSD, clé USB) et la mémoire système (RAM). Les appels aux API sont réalisés via .NET Framework/Mono.
                 </p>
-                <img id="aboutEn"/>
+                <img id="aboutEn" alt=""/>
                 <p>
                 Sur les ordinateurs et les smartphones, le processeur central n’effectue des opérations que sur les données chargées dans la RAM. Cette mémoire n’est pas permanente et sa taille est limitée, c’est pourquoi le système dispose toujours d’une mémoire permanente (SSD, disque dur, carte SD - ci-après le "disque"). Dans de nombreux cas, la performance du système est déterminée non seulement par le processeur (qui est souvent au centre d’attention des publicités et des benchmarks), mais aussi par la performance de la mémoire, en particulier de la RAM et du disque. Les spécifications officielles (notamment celles des smartphones) présentent peu d'informations sur les caractéristiques de la mémoire, sauf peut-être celles des volumes. Cette application cherche à définir clairement les performances de la mémoire en mettant en évidence et en évaluant trois aspects: la vitesse de lecture (transfert de données du disque vers la RAM), l’écriture (de la RAM vers le disque) et la vitesse de la RAM (copie de données d’une zone de RAM à une autre).
                 </p>
