@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cpdt_results/static/css/main.c5e2e9df.chunk.css",
-    "main.js": "/cpdt_results/static/js/main.04160532.chunk.js",
-    "main.js.map": "/cpdt_results/static/js/main.04160532.chunk.js.map",
-    "runtime-main.js": "/cpdt_results/static/js/runtime-main.c1619d6f.js",
-    "runtime-main.js.map": "/cpdt_results/static/js/runtime-main.c1619d6f.js.map",
-    "static/js/2.35c36b93.chunk.js": "/cpdt_results/static/js/2.35c36b93.chunk.js",
-    "static/js/2.35c36b93.chunk.js.map": "/cpdt_results/static/js/2.35c36b93.chunk.js.map",
+    "main.css": "/cpdt_results/static/css/main.9fe530f0.chunk.css",
+    "main.js": "/cpdt_results/static/js/main.c59b7255.chunk.js",
+    "main.js.map": "/cpdt_results/static/js/main.c59b7255.chunk.js.map",
+    "runtime-main.js": "/cpdt_results/static/js/runtime-main.d0bb99b6.js",
+    "runtime-main.js.map": "/cpdt_results/static/js/runtime-main.d0bb99b6.js.map",
+    "static/js/2.c9854050.chunk.js": "/cpdt_results/static/js/2.c9854050.chunk.js",
+    "static/js/2.c9854050.chunk.js.map": "/cpdt_results/static/js/2.c9854050.chunk.js.map",
     "index.html": "/cpdt_results/index.html",
-    "precache-manifest.726c1f0f7612ffb0a3a82325bf9ecae3.js": "/cpdt_results/precache-manifest.726c1f0f7612ffb0a3a82325bf9ecae3.js",
+    "precache-manifest.da0b1651d831c13f0f3b727ff6d9a006.js": "/cpdt_results/precache-manifest.da0b1651d831c13f0f3b727ff6d9a006.js",
     "service-worker.js": "/cpdt_results/service-worker.js",
-    "static/css/main.c5e2e9df.chunk.css.map": "/cpdt_results/static/css/main.c5e2e9df.chunk.css.map",
-    "static/js/2.35c36b93.chunk.js.LICENSE.txt": "/cpdt_results/static/js/2.35c36b93.chunk.js.LICENSE.txt",
+    "static/css/main.9fe530f0.chunk.css.map": "/cpdt_results/static/css/main.9fe530f0.chunk.css.map",
+    "static/js/2.c9854050.chunk.js.LICENSE.txt": "/cpdt_results/static/js/2.c9854050.chunk.js.LICENSE.txt",
     "static/media/index.css": "/cpdt_results/static/media/RuBlack.bd379b41.png",
     "static/media/index_dark.css": "/cpdt_results/static/media/RuWhite.47b2b792.png",
     "static/media/apk.svg": "/cpdt_results/static/media/apk.a00fa3a4.svg",
@@ -22,9 +22,9 @@
     "static/media/windows.svg": "/cpdt_results/static/media/windows.15e72531.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c1619d6f.js",
-    "static/js/2.35c36b93.chunk.js",
-    "static/css/main.c5e2e9df.chunk.css",
-    "static/js/main.04160532.chunk.js"
+    "static/js/runtime-main.d0bb99b6.js",
+    "static/js/2.c9854050.chunk.js",
+    "static/css/main.9fe530f0.chunk.css",
+    "static/js/main.c59b7255.chunk.js"
   ]
 }
