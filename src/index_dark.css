@@ -61,6 +61,14 @@ body.dark img#aboutRu{
   content: url(./img/RuWhite.png);
 }
 
+body.dark img#aboutZht{
+  content: url(./img/ZhtWhite.png);
+}
+
+body.dark img#aboutZh{
+  content: url(./img/ZhWhite.png);
+}
+
 body.dark img#aboutEn{
   content: url(./img/EnWhite.png);
 }

@@ -9,6 +9,8 @@ import Hint from './Hint'
 import AboutEn from './AboutEn'
 import AboutRu from './AboutRu'
 import AboutFr from './AboutFr'
+import AboutZh from './AboutZh'
+import AboutZht from './AboutZht'
 import db from './data'
 
 class App extends Component {
@@ -227,11 +229,17 @@ class App extends Component {
           {'ontouchstart' in window && this.state.swipeHint && <Hint>{l18n.hintSwipe}</Hint>}
         </>
       </ReactSwipeEvents>
-      : l18n.locale === l18n.ruLocale 
-        ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
-        : (l18n.locale === l18n.frLocale 
+      : (
+        l18n.locale === l18n.ruLocale 
+          ? <AboutRu toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
+        : l18n.locale === l18n.frLocale 
           ? <AboutFr toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
-          : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/>));
+        : l18n.locale === l18n.zhtLocale
+            ? <AboutZht toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
+        : l18n.locale === l18n.zhLocale 
+            ? <AboutZh toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/> 
+        : <AboutEn toggleAbout={this.toggleAbout} linkClass={helpLinkClass} inApp={this.state.inAppPlatform != null} download={this.state.showDownload}/>)
+        );
   }
 }
 

@@ -1,6 +1,8 @@
 import en from './en';
 import ru from './ru';
 import fr from './fr';
+import zht from './zht';
+import zh from './zh';
 
 const langParam = "lang";
 
@@ -32,7 +34,15 @@ translations.init = function() {
         localeObj = fr;
         this.locale = this.frLocale;
     }
-
+    else if (lang.includes(this.zhtLocale)) {
+        localeObj = zht;
+        this.locale = this.zhtLocale;
+    }
+    else if (lang.includes(this.zhLocale)) {
+        localeObj = zh;
+        this.locale = this.zhLocale;
+    }
+    
     if (localeObj)
         Object.keys(translations).forEach((key) => {
             if (localeObj[key])
@@ -43,5 +53,7 @@ translations.init = function() {
 translations.enLocale = "en";
 translations.ruLocale = "ru";
 translations.frLocale = "fr";
+translations.zhLocale = "zh";
+translations.zhtLocale = "zht";
 
 export default translations;

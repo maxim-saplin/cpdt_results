@@ -116,6 +116,28 @@ img#aboutRu{
   box-sizing: border-box;
 }
 
+img#aboutZh{
+  content: url(./img/ZhBlack.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 460px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+img#aboutZht{
+  content: url(./img/ZhtBlack.png);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 460px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
 img#aboutEn{
   content: url(./img/EnBlack.png);
   display: block;
