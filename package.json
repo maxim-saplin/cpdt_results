@@ -8,7 +8,7 @@
     "lodash": "^4.17.21",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^5.0.1",
     "react-swipe-events": "^1.0.3",
     "url-search-params-polyfill": "^5.0.0",
     "whatwg-fetch": "^3.5.0"
