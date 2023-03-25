@@ -25,7 +25,10 @@ export default function About(props){
                 {!props.inApp && <> See download links above.</>}
                 </p>
                 <p>
-                At least 3 test runs are done, 
+                When there're multiple measrements available from many devices 90th percentile is taken for each measurement.
+                </p>
+                <p>
+                When testing one device, at least 3 test runs are done, 
                 for each of the 5 performance metrics the best one is selected. I.e. the set of 5 metrics associated with a certain device 
                 are the greatest of all the average thoughput values obtained through testing.
                 </p>
