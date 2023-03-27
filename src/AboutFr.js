@@ -24,7 +24,7 @@ export default function About(props){
                 <em>Cross Platform Disk Test (CPDT)</em> l'application est utilisée pour mesurer les performances de stockage. 
                 {!props.inApp && <>Voir les liens de téléchargement ci-dessus.</>}
                 </p>
-                <p> Lorsque plusieurs mesures sont disponibles sur de nombreux appareils, le 90e centile est pris pour chaque mesure.
+                <p> Lorsque plusieurs mesures sont disponibles sur de nombreux appareils, le 85e centile est pris pour chaque mesure.
                 </p>
                 <p>
                 Lors du test d'un appareil, au moins 3 essais sont effectués,

@@ -25,7 +25,7 @@ export default function About(props){
                 {!props.inApp && <> See download links above.</>}
                 </p>
                 <p>
-                When there're multiple measrements available from many devices 90th percentile is taken for each measurement.
+                When there're multiple measrements available from many devices 85th percentile is taken for each measurement.
                 </p>
                 <p>
                 When testing one device, at least 3 test runs are done, 
